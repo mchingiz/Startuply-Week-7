@@ -9,27 +9,87 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/animation.css" type="text/css">
     </head>
     <body>
-       	
-        
-        <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-		<script src="js/jquery-3.1.0.min.js"></script>
+      	
+      	
+      	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#">Startup<span>ly</span></a>
+				</div>
+				<div class="navbar-menu">
+					<div class="navbar-menu-left">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#" class="active">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Prices</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Extra</a></li>
+						</ul>
+					</div>
+					<div class="navbar-menu-right">
+						<ul class="accountButtons list-inline list-unstyled pull-right">
+							<li><button class="btn">Login</a></button></li>
+							<li><button class="btn">Sign Up</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+     	
+     	<div id="header">
+     		<div class="container">
+				<h1>Do not wait — <span>launch</span> your startup now!</h1>
+				<h3>this tempate is flexible enough to suit any kind of startup or new business</h3>
+    			<ul class="list-inline list-unstyled center-block">
+					<li>
+  					<button class="btn">
+   						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+   						Get Started
+   					</button></li>
+    				<li><button class="btn">Take Tour</button></li>
+    			</ul>
+     		</div>
+     	</div>
+      	
+      	<div class="logos bgwhite">
+      	<div class="container">
+      		<img class="logo" src="img/logoText.png">
+      		<img class="logo" src="img/logoText.png">
+      		<img class="logo" src="img/logoText.png">
+      		<img class="logo" src="img/logoText.png">
+      		<img class="logo" src="img/logoText.png">
+      	</div>
+      	</div>
+      	
+      	
+      	
+       	<!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+		<script src="assets/js/jquery-3.1.0.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
     </body>
 </html>
+<!--<script type="text/javascript">
+	$(document.ready).on('click',function(){
+		headerWidth=window.innerHeight-70;
+		$("#header").attr('height',headerWidth+'px');
+	})
+</script>-->

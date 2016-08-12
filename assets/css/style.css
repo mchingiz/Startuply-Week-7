@@ -1,0 +1,110 @@
+html, body {
+  background-image: url("../../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato'; }
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #1AC6FF;
+  border-radius: 4px;
+  color: #1AC6FF;
+  padding: 15px 25px;
+  margin: 0 7px;
+  text-transform: uppercase;
+  transition-duration: .2s; }
+  .btn:hover {
+    background-color: #1AC6FF;
+    color: #fff; }
+
+a:hover {
+  text-decoration: none; }
+
+.bgwhite {
+  background-color: white; }
+
+.bggray {
+  background-color: #F0F0F0; }
+
+.navbar-default {
+  background-color: transparent !important;
+  background-image: none;
+  border: none;
+  margin: 0px;
+  box-shadow: none; }
+  .navbar-default .container {
+    background-color: transparent;
+    line-height: 70px; }
+    .navbar-default .container .nav-header {
+      float: left; }
+      .navbar-default .container .nav-header a {
+        color: #fff;
+        font-size: 32px;
+        margin-right: 55px; }
+        .navbar-default .container .nav-header a span {
+          color: #1AC6FF; }
+    .navbar-default .container .navbar-menu .navbar-menu-left {
+      float: left; }
+      .navbar-default .container .navbar-menu .navbar-menu-left ul li a {
+        color: #CDBED4;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition-duration: .2s;
+        padding: 15px 8px 15px 8px; }
+        .navbar-default .container .navbar-menu .navbar-menu-left ul li a:hover {
+          color: #1AC6FF; }
+      .navbar-default .container .navbar-menu .navbar-menu-left ul li .active {
+        color: #1AC6FF;
+        border-bottom: 2px solid #1AC6FF; }
+    .navbar-default .container .navbar-menu .navbar-menu-right {
+      float: right; }
+      .navbar-default .container .navbar-menu .navbar-menu-right ul li button {
+        padding: 8px 27px;
+        margin: 0;
+        font-size: 13px; }
+      .navbar-default .container .navbar-menu .navbar-menu-right ul li:first-child button {
+        border: none;
+        color: #CDBED4;
+        transition-duration: .2s;
+        padding-right: 5px; }
+        .navbar-default .container .navbar-menu .navbar-menu-right ul li:first-child button:hover {
+          color: #1AC6FF;
+          background-color: transparent; }
+
+#header {
+  text-align: center;
+  color: #fff;
+  height: 100%; }
+  #header .container {
+    padding-top: 130px;
+    font-weight: 300; }
+    #header .container h1 {
+      letter-spacing: 1px;
+      line-height: 63px;
+      font-size: 58px; }
+      #header .container h1 span {
+        color: #1AC6FF; }
+    #header .container h3 {
+      line-height: 27px;
+      font-size: 24px; }
+    #header .container ul {
+      margin-top: 25px; }
+      #header .container ul li:first-child button {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #1AC6FF;
+        color: white; }
+        #header .container ul li:first-child button i {
+          margin-right: 5px; }
+      #header .container ul li:last-child button {
+        border-color: #fff;
+        color: #fff; }
+        #header .container ul li:last-child button:hover {
+          background-color: #fff;
+          color: #1AC6FF; }
+
+/*# sourceMappingURL=style.css.map */

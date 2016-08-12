@@ -1,4 +1,4 @@
-#1AC6FF - mainColor
+#1AC6FF - mainColor(blue)
 #F0F0F0 - bgColor
 
 

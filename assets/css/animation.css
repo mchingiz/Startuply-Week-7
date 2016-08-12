@@ -1,0 +1,8 @@
+.animationUp{
+	animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInUp {
+    from {bottom:150px}
+    to {bottom:0px}
+}

@@ -1,0 +1,135 @@
+//Partials
+@import "../scss/partials/_variables.scss";
+
+//Generals
+html, body{
+	background-image: url('../../img/bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100%;
+	margin:0;
+	padding:0;
+	font-family: 'Lato';}
+
+.btn{
+	background-color: transparent;
+	border:1px solid $mainColor;
+	border-radius:4px;
+	color:$mainColor;
+	padding:15px 25px;
+	margin:0 7px;
+	text-transform: uppercase;
+	transition-duration: .2s;
+	&:hover{
+		background-color: $mainColor;
+		color:#fff;}}
+
+a{
+	&:hover{
+		text-decoration: none;}}
+
+//Custom classes
+.bgwhite{
+	background-color: white;
+}
+.bggray{
+	background-color: #F0F0F0;
+}
+
+//Navbar
+
+.navbar-default{
+	background-color: transparent !important;
+	background-image:none;
+	border:none;
+	margin:0px;
+	box-shadow: none;
+	.container{
+		background-color:transparent;
+		line-height: 70px;
+		.nav-header{
+			float:left;
+			a{
+				color:#fff;
+				font-size: 32px;
+				margin-right:55px;
+				span{
+					color:$mainColor;}}}
+		.navbar-menu{
+			.navbar-menu-left{
+				float:left;
+				ul{
+					li{
+						a{
+							color:#CDBED4;
+							font-size: 14px;
+							text-transform: uppercase;
+							transition-duration: .2s;
+							padding:15px 8px 15px 8px;
+							&:hover{
+								color:$mainColor;}}
+						.active{
+							color:$mainColor;
+							border-bottom:2px solid $mainColor;}}}}
+			.navbar-menu-right{
+				float:right;
+				ul{
+					li{
+						button{
+							padding:8px 27px;
+							margin:0;
+							font-size: 13px;}
+						&:first-child{
+							button{
+								border:none;
+								color:#CDBED4;
+								transition-duration: .2s;
+								padding-right:5px;
+								&:hover{
+									color:$mainColor;
+									background-color: transparent;}}}}}}}}}
+
+//Header
+
+#header{
+	text-align: center;
+	color:#fff;
+	height:100%;
+	.container{
+		padding-top:130px;
+		font-weight: 300;
+		h1{
+			letter-spacing: 1px;
+			line-height: 63px;
+			font-size:58px;
+			span{
+				color:$mainColor;}}
+		h3{
+			line-height: 27px;
+			font-size:24px;}
+		ul{
+			margin-top:25px;
+			li{
+				&:first-child{
+					button{
+						padding-left:50px;
+						padding-right:50px;
+						background-color: $mainColor;
+						color:white;
+						i{margin-right: 5px;}}}
+				&:last-child{
+					button{
+						border-color:#fff;
+						color:#fff;
+						&:hover{
+							background-color: #fff;
+							color:$mainColor;}}}}}}}
+
+#logos{
+	.container{
+		.logo{
+			
+		}
+	}
+}
