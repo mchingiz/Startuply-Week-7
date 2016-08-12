@@ -1,8 +1,21 @@
-.animationUp{
-	animation: fadeInUp 2s ease;
+.animateUp{
+	animation: animateUp .2s ease;
 }
 
-@keyframes fadeInUp {
-    from {bottom:150px}
-    to {bottom:0px}
+.animateDown{
+	animation: animateDown .2s ease;
+}
+
+@keyframes animateUp {
+    from {
+		bottom:-150px;}
+    to {
+		bottom:0px;}
+}
+
+@keyframes animateDown {
+    from {
+		bottom:150px;}
+    to {
+		bottom:0px;}
 }

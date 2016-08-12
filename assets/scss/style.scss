@@ -128,8 +128,26 @@ a{
 
 #logos{
 	.container{
-		.logo{
-			
+		ul{
+			margin:20px 0;
+			text-align: center;
+			overflow: hidden;
+			li{
+				padding:0px 25px;
+				img{
+					position: relative;
+				}
+				&:first-child{
+					img{animation-delay: 0.2s}}
+				&:nth-child(2){
+					img{animation-delay: 0.4s}}
+				&:nth-child(3){
+					img{animation-delay: 0.6s}}
+				&:nth-child(4){
+					img{animation-delay: .8s}}
+				&:last-child{
+					img{animation-delay: 1s}}
+			}
 		}
 	}
 }
