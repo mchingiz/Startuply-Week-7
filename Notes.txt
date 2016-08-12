@@ -1,0 +1,12 @@
+#1AC6FF - mainColor
+#F0F0F0 - bgColor
+
+
+
+---Header---
+h1- 58px; Lato;
+h5 - 24px; Lato;
+
+---Tabs---
+h3 - 34px; Lato;
+p - 16px; (25px); Lato;
