@@ -27,6 +27,8 @@ html, body{
 
 a{
 	&:hover{
+		text-decoration: none;}
+	&:focus{
 		text-decoration: none;}}
 
 //Custom classes
@@ -135,8 +137,7 @@ a{
 			li{
 				padding:0px 25px;
 				img{
-					position: relative;
-				}
+					position: relative;}
 				&:first-child{
 					img{animation-delay: 0.2s}}
 				&:nth-child(2){
@@ -146,7 +147,62 @@ a{
 				&:nth-child(4){
 					img{animation-delay: .8s}}
 				&:last-child{
-					img{animation-delay: 1s}}
+					img{animation-delay: 1s}}}}}}
+
+#process{
+	.container{
+		padding-top:60px;
+		.tabs{
+			text-align: center;
+			li{
+				margin:-2px;
+				padding:20px 60px;
+				border:1px solid $borderColor;
+				a{
+					
+					font-size:13px;
+					text-transform: uppercase;
+				}
+				&:hover{
+					background-color: $mainColor;
+					border-right-color:#fff;
+					border-left-color:#fff;
+					a{
+						color:#fff;
+					}
+				}
+			}
+			.active{
+				background-color: $mainColor;
+				border-right-color:#fff;
+				border-left-color:#fff;
+				a{
+					color:#fff;
+				}
+			}
+		}
+		.item{
+			border-bottom:1px solid $borderColor;
+			padding:30px 0 15px 0;
+			.itemImg{}
+			.itemContent{
+				h3{
+					line-height: 37px;
+					font-size: 34px;
+					font-weight: 300;
+					text-transform: uppercase;
+					span{
+						color:$mainColor;
+					}
+				}
+				p{
+					padding:7px 0;
+					line-height: 25px;
+					font-size: 16px;
+				}
+				ul{
+					padding-top:35px;
+				}
 			}
 		}
 	}

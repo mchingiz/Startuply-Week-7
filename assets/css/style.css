@@ -23,6 +23,8 @@ html, body {
 
 a:hover {
   text-decoration: none; }
+a:focus {
+  text-decoration: none; }
 
 .bgwhite {
   background-color: white; }
@@ -125,5 +127,45 @@ a:hover {
       animation-delay: .8s; }
     #logos .container ul li:last-child img {
       animation-delay: 1s; }
+
+#process .container {
+  padding-top: 60px; }
+  #process .container .tabs {
+    text-align: center; }
+    #process .container .tabs li {
+      margin: -2px;
+      padding: 20px 60px;
+      border: 1px solid #E9E9E9; }
+      #process .container .tabs li a {
+        font-size: 13px;
+        text-transform: uppercase; }
+      #process .container .tabs li:hover {
+        background-color: #1AC6FF;
+        border-right-color: #fff;
+        border-left-color: #fff; }
+        #process .container .tabs li:hover a {
+          color: #fff; }
+    #process .container .tabs .active {
+      background-color: #1AC6FF;
+      border-right-color: #fff;
+      border-left-color: #fff; }
+      #process .container .tabs .active a {
+        color: #fff; }
+  #process .container .item {
+    border-bottom: 1px solid #E9E9E9;
+    padding: 30px 0 15px 0; }
+    #process .container .item .itemContent h3 {
+      line-height: 37px;
+      font-size: 34px;
+      font-weight: 300;
+      text-transform: uppercase; }
+      #process .container .item .itemContent h3 span {
+        color: #1AC6FF; }
+    #process .container .item .itemContent p {
+      padding: 7px 0;
+      line-height: 25px;
+      font-size: 16px; }
+    #process .container .item .itemContent ul {
+      padding-top: 35px; }
 
 /*# sourceMappingURL=style.css.map */
