@@ -33,7 +33,7 @@ a{
 
 //Custom classes
 .bgwhite{
-	background-color: white;
+	background-color: #fff;
 }
 .bggray{
 	background-color: #F0F0F0;
@@ -256,14 +256,11 @@ a{
 				font-size: 45px;
 				font-weight: 300;
 				text-transform: uppercase;
-				margin-top:0;
-			}
+				margin-top:0;}
 			p{
 				font-size:16px;
 				line-height: 25px;
-				font-weight: 300;
-			}
-		}
+				font-weight: 300;}}
 		.col-md-7{
 			margin-top:10px;
 			.col-md-4{
@@ -272,11 +269,45 @@ a{
 					border-left:3px solid $mainColor;
 					padding:10px 0 10px 10px;
 					height: 50px;
-					font-size:17px;
-				}
+					font-size:17px;}
 				.btn{
 					border-color:$borderColor;
-					color:$borderColor;
+					color:$borderColor;}}}}}
+
+#packages{
+	.container{
+		padding-top:40px;
+		text-align: center;
+		.row{
+			h1{
+				font-size:45px;
+				font-weight: 300;
+				text-transform: uppercase;
+				span{
+					color:$mainColor;
+				}
+			}
+			p{
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 25px;
+			}
+		}
+		.col-md-4{
+			background-color:#f7f7f7;
+			padding:0;
+			h1{
+				text-transform: uppercase;
+				font-size:25px;
+			}
+			.price{
+				background-color: $bggray;
+				width:100%;
+				h2{
+					font-size:115px;
+					span{
+						font-size:47px;
+					}
 				}
 			}
 		}

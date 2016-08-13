@@ -27,7 +27,7 @@ a:focus {
   text-decoration: none; }
 
 .bgwhite {
-  background-color: white; }
+  background-color: #fff; }
 
 .bggray {
   background-color: #F0F0F0; }
@@ -242,5 +242,32 @@ a:focus {
     #subscription .container .col-md-7 .col-md-4 .btn {
       border-color: #E9E9E9;
       color: #E9E9E9; }
+
+#packages .container {
+  padding-top: 40px;
+  text-align: center; }
+  #packages .container .row h1 {
+    font-size: 45px;
+    font-weight: 300;
+    text-transform: uppercase; }
+    #packages .container .row h1 span {
+      color: #1AC6FF; }
+  #packages .container .row p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px; }
+  #packages .container .col-md-4 {
+    background-color: #f7f7f7;
+    padding: 0; }
+    #packages .container .col-md-4 h1 {
+      text-transform: uppercase;
+      font-size: 25px; }
+    #packages .container .col-md-4 .price {
+      background-color: #F0F0F0;
+      width: 100%; }
+      #packages .container .col-md-4 .price h2 {
+        font-size: 115px; }
+        #packages .container .col-md-4 .price h2 span {
+          font-size: 47px; }
 
 /*# sourceMappingURL=style.css.map */
