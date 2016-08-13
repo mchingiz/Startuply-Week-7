@@ -168,4 +168,79 @@ a:focus {
     #process .container .item .itemContent ul {
       padding-top: 35px; }
 
+#features .container {
+  height: 600px;
+  padding-top: 50px; }
+  #features .container .col-lg-4 {
+    margin-top: 90px;
+    padding: 0; }
+    #features .container .col-lg-4 div {
+      border-radius: 7px 0 0 7px;
+      padding: 15px 95px 15px 20px; }
+      #features .container .col-lg-4 div h5 {
+        color: #1AC6FF;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 20px;
+        text-transform: uppercase; }
+      #features .container .col-lg-4 div p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #8D8D8D; }
+  #features .container .active {
+    background-color: #1AC6FF;
+    color: #fff; }
+    #features .container .active h5 {
+      color: #fff !important; }
+  #features .container .col-lg-8 {
+    position: relative;
+    left: -120px;
+    bottom: -40px; }
+
+#featuresList .container {
+  padding-top: 90px;
+  padding-bottom: 20px;
+  text-align: center; }
+  #featuresList .container .row {
+    margin-bottom: 70px; }
+    #featuresList .container .row .col-md-3 i {
+      font-size: 50px;
+      color: #1AC6FF; }
+      #featuresList .container .row .col-md-3 i:hover {
+        color: #80dfff; }
+    #featuresList .container .row .col-md-3 h6 {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px; }
+    #featuresList .container .row .col-md-3 p {
+      color: #8D8D8D;
+      font-size: 15px;
+      line-height: 25px; }
+
+#subscription .container {
+  padding: 20px 15px; }
+  #subscription .container .col-md-5 {
+    color: #fff;
+    text-align: center; }
+    #subscription .container .col-md-5 h2 {
+      font-size: 45px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 0; }
+    #subscription .container .col-md-5 p {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 300; }
+  #subscription .container .col-md-7 {
+    margin-top: 10px; }
+    #subscription .container .col-md-7 .col-md-4 input {
+      border: none;
+      border-left: 3px solid #1AC6FF;
+      padding: 10px 0 10px 10px;
+      height: 50px;
+      font-size: 17px; }
+    #subscription .container .col-md-7 .col-md-4 .btn {
+      border-color: #E9E9E9;
+      color: #E9E9E9; }
+
 /*# sourceMappingURL=style.css.map */

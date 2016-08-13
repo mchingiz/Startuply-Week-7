@@ -161,26 +161,19 @@ a{
 				a{
 					
 					font-size:13px;
-					text-transform: uppercase;
-				}
+					text-transform: uppercase;}
 				&:hover{
 					background-color: $mainColor;
 					border-right-color:#fff;
 					border-left-color:#fff;
 					a{
-						color:#fff;
-					}
-				}
-			}
+						color:#fff;}}}
 			.active{
 				background-color: $mainColor;
 				border-right-color:#fff;
 				border-left-color:#fff;
 				a{
-					color:#fff;
-				}
-			}
-		}
+					color:#fff;}}}
 		.item{
 			border-bottom:1px solid $borderColor;
 			padding:30px 0 15px 0;
@@ -192,16 +185,98 @@ a{
 					font-weight: 300;
 					text-transform: uppercase;
 					span{
-						color:$mainColor;
-					}
-				}
+						color:$mainColor;}}
 				p{
 					padding:7px 0;
 					line-height: 25px;
 					font-size: 16px;
 				}
 				ul{
-					padding-top:35px;
+					padding-top:35px;}}}}}
+
+#features{
+	.container{
+		height: 600px;
+		padding-top:50px;
+		.col-lg-4{
+			margin-top:90px;
+			padding:0;
+			div{
+				border-radius: 7px 0 0 7px;
+				padding:15px 95px 15px 20px;
+				h5{
+					color:$mainColor;
+					font-size:17px;
+					font-weight: bold;
+					line-height: 20px;
+					text-transform: uppercase;}
+				p{
+					font-size:16px;
+					line-height: 30px;
+					color:$pColor;}}}
+		.active{
+			background-color: $mainColor;
+			color:#fff;
+			h5{
+				color:#fff !important;}}
+		.col-lg-8{
+			position:relative;
+			left:-120px;
+			bottom:-40px;}}}
+
+#featuresList{
+	.container{
+		padding-top:90px;
+		padding-bottom:20px;
+		text-align: center;
+		.row{
+			margin-bottom:70px;
+			.col-md-3{
+				i{
+					font-size:50px;
+					color:$mainColor;
+					&:hover{
+						color:lighten($mainColor,20%);}}
+				h6{
+					text-transform: uppercase;
+					font-size: 16px;
+					margin-bottom:10px;}
+				p{
+					color:$pColor;
+					font-size: 15px;
+					line-height: 25px;}}}}}
+
+#subscription{
+	.container{
+		padding:20px 15px;
+		.col-md-5{
+			color:#fff;
+			text-align: center;
+			h2{
+				font-size: 45px;
+				font-weight: 300;
+				text-transform: uppercase;
+				margin-top:0;
+			}
+			p{
+				font-size:16px;
+				line-height: 25px;
+				font-weight: 300;
+			}
+		}
+		.col-md-7{
+			margin-top:10px;
+			.col-md-4{
+				input{
+					border:none;
+					border-left:3px solid $mainColor;
+					padding:10px 0 10px 10px;
+					height: 50px;
+					font-size:17px;
+				}
+				.btn{
+					border-color:$borderColor;
+					color:$borderColor;
 				}
 			}
 		}
