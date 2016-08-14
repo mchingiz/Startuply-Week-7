@@ -32,6 +32,17 @@ a:focus {
 .bggray {
   background-color: #F0F0F0; }
 
+.sectionHeader h1 {
+  font-size: 45px;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .sectionHeader h1 span {
+    color: #1AC6FF; }
+.sectionHeader p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px; }
+
 .navbar-default {
   background-color: transparent !important;
   background-image: none;
@@ -246,16 +257,6 @@ a:focus {
 #packages .container {
   padding-top: 40px;
   text-align: center; }
-  #packages .container .row h1 {
-    font-size: 45px;
-    font-weight: 300;
-    text-transform: uppercase; }
-    #packages .container .row h1 span {
-      color: #1AC6FF; }
-  #packages .container .row p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px; }
   #packages .container .col-md-4 {
     padding: 15px; }
     #packages .container .col-md-4 .package {
@@ -308,5 +309,29 @@ a:focus {
     color: #a3a3a3; }
     #packages .container .disabled .btn:hover {
       background-color: transparent; }
+
+#awards .container {
+  text-align: center;
+  padding: 25px 15px 50px 15px; }
+  #awards .container ul {
+    padding-top: 65px; }
+    #awards .container ul li {
+      padding: 0 25px; }
+
+#clientQuote .container {
+  text-align: center;
+  padding: 30px 15px 40px 15px; }
+  #clientQuote .container .row h1 {
+    color: #fff; }
+  #clientQuote .container i {
+    color: #1AC6FF;
+    font-size: 30px;
+    position: relative;
+    top: 10px; }
+  #clientQuote .container p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */
