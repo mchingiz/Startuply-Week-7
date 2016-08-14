@@ -257,17 +257,56 @@ a:focus {
     font-weight: 300;
     line-height: 25px; }
   #packages .container .col-md-4 {
-    background-color: #f7f7f7;
-    padding: 0; }
-    #packages .container .col-md-4 h1 {
-      text-transform: uppercase;
-      font-size: 25px; }
-    #packages .container .col-md-4 .price {
-      background-color: #F0F0F0;
-      width: 100%; }
-      #packages .container .col-md-4 .price h2 {
-        font-size: 115px; }
-        #packages .container .col-md-4 .price h2 span {
-          font-size: 47px; }
+    padding: 15px; }
+    #packages .container .col-md-4 .package {
+      background-color: #f7f7f7;
+      padding-bottom: 50px; }
+      #packages .container .col-md-4 .package h1 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 60px;
+        margin: 0; }
+      #packages .container .col-md-4 .package .price {
+        background-color: #F0F0F0;
+        width: 100%;
+        padding-bottom: 10px; }
+        #packages .container .col-md-4 .package .price h2 {
+          color: #1AC6FF;
+          font-size: 115px;
+          font-weight: 300;
+          margin: 0; }
+          #packages .container .col-md-4 .package .price h2 span {
+            font-size: 47px;
+            vertical-align: top;
+            position: relative;
+            top: 15px; }
+        #packages .container .col-md-4 .package .price p {
+          color: #1AC6FF;
+          margin: 0;
+          text-transform: uppercase; }
+      #packages .container .col-md-4 .package .description {
+        padding: 0 50px; }
+        #packages .container .col-md-4 .package .description ul li {
+          border-bottom: 1px solid #E9E9E9;
+          padding: 20px 0; }
+          #packages .container .col-md-4 .package .description ul li:last-child {
+            border: none; }
+        #packages .container .col-md-4 .package .description .btn {
+          width: 100%;
+          margin-top: 15px; }
+  #packages .container .disabled h1 {
+    color: #A3A3A3; }
+  #packages .container .disabled .price h2 {
+    color: #a3a3a3 !important; }
+  #packages .container .disabled .price p {
+    color: #a3a3a3 !important; }
+  #packages .container .disabled li {
+    color: #a3a3a3; }
+  #packages .container .disabled .btn {
+    border-color: #a3a3a3;
+    color: #a3a3a3; }
+    #packages .container .disabled .btn:hover {
+      background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
