@@ -12,6 +12,12 @@ html, body{
 	padding:0;
 	font-family: 'Lato';}
 
+section{
+	text-align: center;
+}
+
+.row{margin-left:0;margin-right:0}
+
 .btn{
 	background-color: transparent;
 	border:1px solid $mainColor;
@@ -106,7 +112,6 @@ a{
 //Header
 
 #header{
-	text-align: center;
 	color:#fff;
 	height:100%;
 	.container{
@@ -174,11 +179,7 @@ a{
 					font-size:13px;
 					text-transform: uppercase;}
 				&:hover{
-					background-color: $mainColor;
-					border-right-color:#fff;
-					border-left-color:#fff;
-					a{
-						color:#fff;}}}
+					@extend .active}}
 			.active{
 				background-color: $mainColor;
 				border-right-color:#fff;
@@ -239,7 +240,6 @@ a{
 	.container{
 		padding-top:90px;
 		padding-bottom:20px;
-		text-align: center;
 		.row{
 			margin-bottom:70px;
 			.col-md-3{
@@ -262,7 +262,6 @@ a{
 		padding:20px 15px;
 		.col-md-5{
 			color:#fff;
-			text-align: center;
 			h2{
 				font-size: 45px;
 				font-weight: 300;
@@ -288,7 +287,6 @@ a{
 #packages{
 	.container{
 		padding-top:40px;
-		text-align: center;
 		.col-md-4{
 			padding:15px;
 			.package{
@@ -347,7 +345,6 @@ a{
 
 #awards{
 	.container{
-		text-align: center;
 		padding:25px 15px 50px 15px;
 		ul{
 			padding-top:65px;
@@ -356,7 +353,6 @@ a{
 
 #clientQuote{
 	.container{
-		text-align: center;
 		padding:30px 15px 40px 15px;
 		.row{
 			h1{
@@ -374,5 +370,219 @@ a{
 			line-height: 25px;}}}
 
 #client{
-	
+	.container{
+		.col-md-10{
+			.col-md-4{
+				padding:40px 0 35px 0;
+				border-bottom: 1px solid
+				$borderColor;
+				.clientImg{
+					margin-left:10px;
+					float:left;
+					img{
+						transition-duration: .2s;
+						border-radius: 100%;
+						margin-top:18px;
+						width:70px;
+						opacity: 0.7;}}
+				.clientAbout{
+					margin-left:20px;
+					float:left;
+					h1{
+						transition-duration: .2s;
+						color:#E3E3E3;
+						font-size: 16px;
+						line-height: 25px;
+						text-transform: uppercase;
+						margin-bottom: 0px;}
+					h2{
+						transition-duration: .2s;
+						margin-top:0;
+						font-size: 16px;
+						line-height: 25px;
+						color: #E3E3E3;
+						span{
+							transition-duration: .0s;}}}
+				&:hover{
+					@extend .active;}}
+			.active{
+				border-bottom-color: $mainColor;
+				.clientImg{
+					img{
+						opacity:1;}}
+				.clientAbout{
+					h1{
+						color:$mainColor;}
+					h2{
+						color:#606060;
+						span{color:$mainColor;}}}}}}}
+
+#team{
+	padding:50px 15px 25px 15px;
+	.row{
+		p{
+			width:900px;
+			margin:20px auto;
+			font-weight: 400;}}
+	.container{
+		padding-top:60px;
+		.col-md-3{
+			.teamMember{
+				.overlap{
+					position: relative;
+					height: auto;
+					.memberImg{
+						img{width: 100%;}}
+					.memberAbout{
+						padding: 30px;
+						position: absolute;
+						top:0;left:0;
+						height: 100%;
+						width:100%;
+						visibility:hidden;
+						background-color: rgba(26,198,255,.8);
+						color:#fff;
+						ul{
+							position: relative;
+							top: 30px;
+							li{
+								padding-right: 0;
+								a{
+									i{
+										width:28px;
+										height: 28px;
+										color:#fff;
+										border:1px solid #fff;
+										border-radius:5px;
+										padding:5px;
+										&:hover{
+											background-color: #fff;
+											color:$mainColor;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				h1{
+					font-size:16px;
+					font-weight: 700;
+					line-height: 25px;
+					color:$mainColor;
+					text-transform: uppercase;
+					margin-bottom: 0px;}
+				h2{
+					font-size: 14px;
+					line-height: 20px;
+					margin-top:5px;}
+				&:hover > .overlap > .memberAbout{
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+#launch{
+	background-color: $mainColor;
+	text-align: left;
+	.container{
+		color:#fff;
+		padding:40px 15px;
+		.col-md-1{
+			i{
+				margin-top: 6px;
+				font-size: 70px;}}
+		.col-md-8{
+			h1{
+				color:#fff;
+				text-transform: uppercase;
+				font-size: 45px;
+				font-weight: 300;
+				margin:0;}
+			p{
+				font-size: 16px;
+				line-height: 25px;}}
+		.col-md-3{
+			margin-top:13px;
+			.btn{
+				border-color:#fff;
+				color:#fff;
+				&:hover{
+					background-color: #fff;
+					color:$mainColor;}}}}}
+
+#footer{
+	.container{
+		text-align: left;
+		h2{
+			color:#fff;
+			font-size:16px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.col-md-4{
+			h1{
+				color:#eee;
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: 300;
+				margin-bottom:30px;
+			}
+			p{
+				color:#fff;
+				font-size: 15px;
+				line-height: 25px;
+			}
+			h3{
+				color:#fff;
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 25px;
+			}
+		}
+		.col-md-5{
+			.socialNetworks{
+				width:100%;
+				display:flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.socialItem{
+					i{
+						margin:0 auto;
+						color:$mainColor;
+						font-size: 60px;
+						padding:25px;
+						&:hover{
+							color:darken($mainColor,10%);
+						}
+					}
+				}
+			}
+		}
+		.col-md-3{
+			ul{
+				li{
+					padding:5px;
+					color:#fff;
+					i{
+						width:40px;
+						color:$mainColor;
+						font-size: 25px;
+					}
+					a{
+						&:hover{
+							color:darken($mainColor,10%);
+						}
+					}
+				}
+			}
+		}
+	}
+	.row{
+		padding:70px 0 30px 0;
+		color:#fff;
+		opacity:.5;
+	}
 }

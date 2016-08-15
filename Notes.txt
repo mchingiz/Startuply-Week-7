@@ -1,12 +1,4 @@
-#1AC6FF - mainColor(blue)
-#F0F0F0 - bgColor
-
-
-
----Header---
-h1- 58px; Lato;
-h5 - 24px; Lato;
-
----Tabs---
-h3 - 34px; Lato;
-p - 16px; (25px); Lato;
+*section tagina text-align:center verl
+*font-size ve line-height cox tekrar olunub
+*buttonlarin hoverini ve ozunu 2 ayri classla yaz=>class1- back mavi,yazi ag; class2-back ag,yazi mavi
+*contact us hissesinde unvanin 2ci setiri surusub

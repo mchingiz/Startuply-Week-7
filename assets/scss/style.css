@@ -8,13 +8,6 @@ html, body {
   padding: 0;
   font-family: 'Lato'; }
 
-section {
-  text-align: center; }
-
-.row {
-  margin-left: 0;
-  margin-right: 0; }
-
 .btn {
   background-color: transparent;
   border: 1px solid #1AC6FF;
@@ -77,7 +70,7 @@ a:focus {
         padding: 15px 8px 15px 8px; }
         .navbar-default .container .navbar-menu .navbar-menu-left ul li a:hover {
           color: #1AC6FF; }
-      .navbar-default .container .navbar-menu .navbar-menu-left ul li .active, .navbar-default #process .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, #process .navbar-default .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, .navbar-default #process .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, #process .navbar-default .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, .navbar-default #client .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, #client .navbar-default .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, .navbar-default #client .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover, #client .navbar-default .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover {
+      .navbar-default .container .navbar-menu .navbar-menu-left ul li .active {
         color: #1AC6FF;
         border-bottom: 2px solid #1AC6FF; }
     .navbar-default .container .navbar-menu .navbar-menu-right {
@@ -96,6 +89,7 @@ a:focus {
           background-color: transparent; }
 
 #header {
+  text-align: center;
   color: #fff;
   height: 100%; }
   #header .container {
@@ -156,11 +150,17 @@ a:focus {
       #process .container .tabs li a {
         font-size: 13px;
         text-transform: uppercase; }
-    #process .container .tabs .active, #process .container .tabs li:hover, #process #client .container .tabs .col-md-10 .col-md-4:hover, #client #process .container .tabs .col-md-10 .col-md-4:hover, #process #client .container .col-md-10 .tabs .col-md-4:hover, #client #process .container .col-md-10 .tabs .col-md-4:hover {
+      #process .container .tabs li:hover {
+        background-color: #1AC6FF;
+        border-right-color: #fff;
+        border-left-color: #fff; }
+        #process .container .tabs li:hover a {
+          color: #fff; }
+    #process .container .tabs .active {
       background-color: #1AC6FF;
       border-right-color: #fff;
       border-left-color: #fff; }
-      #process .container .tabs .active a, #process .container .tabs li:hover a, #process #client .container .tabs .col-md-10 .col-md-4:hover a, #client #process .container .tabs .col-md-10 .col-md-4:hover a, #process #client .container .col-md-10 .tabs .col-md-4:hover a, #client #process .container .col-md-10 .tabs .col-md-4:hover a {
+      #process .container .tabs .active a {
         color: #fff; }
   #process .container .item {
     border-bottom: 1px solid #E9E9E9;
@@ -198,10 +198,10 @@ a:focus {
         font-size: 16px;
         line-height: 30px;
         color: #8D8D8D; }
-  #features .container .active, #features #process .container .tabs li:hover, #process #features .container .tabs li:hover, #features #client .container .col-md-10 .col-md-4:hover, #client #features .container .col-md-10 .col-md-4:hover {
+  #features .container .active {
     background-color: #1AC6FF;
     color: #fff; }
-    #features .container .active h5, #features #process .container .tabs li:hover h5, #process #features .container .tabs li:hover h5, #features #client .container .col-md-10 .col-md-4:hover h5, #client #features .container .col-md-10 .col-md-4:hover h5 {
+    #features .container .active h5 {
       color: #fff !important; }
   #features .container .col-lg-8 {
     position: relative;
@@ -210,7 +210,8 @@ a:focus {
 
 #featuresList .container {
   padding-top: 90px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  text-align: center; }
   #featuresList .container .row {
     margin-bottom: 70px; }
     #featuresList .container .row .col-md-3 i {
@@ -230,7 +231,8 @@ a:focus {
 #subscription .container {
   padding: 20px 15px; }
   #subscription .container .col-md-5 {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
     #subscription .container .col-md-5 h2 {
       font-size: 45px;
       font-weight: 300;
@@ -253,7 +255,8 @@ a:focus {
       color: #E9E9E9; }
 
 #packages .container {
-  padding-top: 40px; }
+  padding-top: 40px;
+  text-align: center; }
   #packages .container .col-md-4 {
     padding: 15px; }
     #packages .container .col-md-4 .package {
@@ -308,6 +311,7 @@ a:focus {
       background-color: transparent; }
 
 #awards .container {
+  text-align: center;
   padding: 25px 15px 50px 15px; }
   #awards .container ul {
     padding-top: 65px; }
@@ -315,6 +319,7 @@ a:focus {
       padding: 0 25px; }
 
 #clientQuote .container {
+  text-align: center;
   padding: 30px 15px 40px 15px; }
   #clientQuote .container .row h1 {
     color: #fff; }
@@ -329,172 +334,9 @@ a:focus {
     font-weight: 300;
     line-height: 25px; }
 
-#client .container .col-md-10 .col-md-4 {
-  padding: 40px 0 35px 0;
-  border-bottom: 1px solid #E9E9E9; }
-  #client .container .col-md-10 .col-md-4 .clientImg {
-    margin-left: 10px;
-    float: left; }
-    #client .container .col-md-10 .col-md-4 .clientImg img {
-      transition-duration: .2s;
-      border-radius: 100%;
-      margin-top: 18px;
-      width: 70px;
-      opacity: 0.7; }
-  #client .container .col-md-10 .col-md-4 .clientAbout {
-    margin-left: 20px;
-    float: left; }
-    #client .container .col-md-10 .col-md-4 .clientAbout h1 {
-      transition-duration: .2s;
-      color: #E3E3E3;
-      font-size: 16px;
-      line-height: 25px;
-      text-transform: uppercase;
-      margin-bottom: 0px; }
-    #client .container .col-md-10 .col-md-4 .clientAbout h2 {
-      transition-duration: .2s;
-      margin-top: 0;
-      font-size: 16px;
-      line-height: 25px;
-      color: #E3E3E3; }
-      #client .container .col-md-10 .col-md-4 .clientAbout h2 span {
-        transition-duration: .0s; }
-#client .container .col-md-10 .active, #client #process .container .col-md-10 .tabs li:hover, #process #client .container .col-md-10 .tabs li:hover, #client #process .container .tabs .col-md-10 li:hover, #process #client .container .tabs .col-md-10 li:hover, #client .container .col-md-10 .col-md-4:hover {
-  border-bottom-color: #1AC6FF; }
-  #client .container .col-md-10 .active .clientImg img, #client #process .container .col-md-10 .tabs li:hover .clientImg img, #process #client .container .col-md-10 .tabs li:hover .clientImg img, #client #process .container .tabs .col-md-10 li:hover .clientImg img, #process #client .container .tabs .col-md-10 li:hover .clientImg img, #client .container .col-md-10 .col-md-4:hover .clientImg img {
-    opacity: 1; }
-  #client .container .col-md-10 .active .clientAbout h1, #client #process .container .col-md-10 .tabs li:hover .clientAbout h1, #process #client .container .col-md-10 .tabs li:hover .clientAbout h1, #client #process .container .tabs .col-md-10 li:hover .clientAbout h1, #process #client .container .tabs .col-md-10 li:hover .clientAbout h1, #client .container .col-md-10 .col-md-4:hover .clientAbout h1 {
-    color: #1AC6FF; }
-  #client .container .col-md-10 .active .clientAbout h2, #client #process .container .col-md-10 .tabs li:hover .clientAbout h2, #process #client .container .col-md-10 .tabs li:hover .clientAbout h2, #client #process .container .tabs .col-md-10 li:hover .clientAbout h2, #process #client .container .tabs .col-md-10 li:hover .clientAbout h2, #client .container .col-md-10 .col-md-4:hover .clientAbout h2 {
-    color: #606060; }
-    #client .container .col-md-10 .active .clientAbout h2 span, #client #process .container .col-md-10 .tabs li:hover .clientAbout h2 span, #process #client .container .col-md-10 .tabs li:hover .clientAbout h2 span, #client #process .container .tabs .col-md-10 li:hover .clientAbout h2 span, #process #client .container .tabs .col-md-10 li:hover .clientAbout h2 span, #client .container .col-md-10 .col-md-4:hover .clientAbout h2 span {
-      color: #1AC6FF; }
-
-#team {
-  padding: 50px 15px 25px 15px; }
-  #team .row p {
-    width: 900px;
-    margin: 20px auto;
-    font-weight: 400; }
-  #team .container {
-    padding-top: 60px; }
-    #team .container .col-md-3 .teamMember .overlap {
-      position: relative;
-      height: auto; }
-      #team .container .col-md-3 .teamMember .overlap .memberImg img {
-        width: 100%; }
-      #team .container .col-md-3 .teamMember .overlap .memberAbout {
-        padding: 30px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        visibility: hidden;
-        background-color: rgba(26, 198, 255, 0.8);
-        color: #fff; }
-        #team .container .col-md-3 .teamMember .overlap .memberAbout ul {
-          position: relative;
-          top: 30px; }
-          #team .container .col-md-3 .teamMember .overlap .memberAbout ul li {
-            padding-right: 0; }
-            #team .container .col-md-3 .teamMember .overlap .memberAbout ul li a i {
-              width: 28px;
-              height: 28px;
-              color: #fff;
-              border: 1px solid #fff;
-              border-radius: 5px;
-              padding: 5px; }
-              #team .container .col-md-3 .teamMember .overlap .memberAbout ul li a i:hover {
-                background-color: #fff;
-                color: #1AC6FF; }
-    #team .container .col-md-3 .teamMember h1 {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 25px;
-      color: #1AC6FF;
-      text-transform: uppercase;
-      margin-bottom: 0px; }
-    #team .container .col-md-3 .teamMember h2 {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 5px; }
-    #team .container .col-md-3 .teamMember:hover > .overlap > .memberAbout {
-      visibility: visible; }
-
-#launch {
-  background-color: #1AC6FF;
-  text-align: left; }
-  #launch .container {
-    color: #fff;
-    padding: 40px 15px; }
-    #launch .container .col-md-1 i {
-      margin-top: 6px;
-      font-size: 70px; }
-    #launch .container .col-md-8 h1 {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 45px;
-      font-weight: 300;
-      margin: 0; }
-    #launch .container .col-md-8 p {
-      font-size: 16px;
-      line-height: 25px; }
-    #launch .container .col-md-3 {
-      margin-top: 13px; }
-      #launch .container .col-md-3 .btn {
-        border-color: #fff;
-        color: #fff; }
-        #launch .container .col-md-3 .btn:hover {
-          background-color: #fff;
-          color: #1AC6FF; }
-
-#footer .container {
-  text-align: left; }
-  #footer .container h2 {
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase; }
-  #footer .container .col-md-4 h1 {
-    color: #eee;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 300;
-    margin-bottom: 30px; }
-  #footer .container .col-md-4 p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 25px; }
-  #footer .container .col-md-4 h3 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 25px; }
-  #footer .container .col-md-5 .socialNetworks {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    #footer .container .col-md-5 .socialNetworks .socialItem i {
-      margin: 0 auto;
-      color: #1AC6FF;
-      font-size: 60px;
-      padding: 25px; }
-      #footer .container .col-md-5 .socialNetworks .socialItem i:hover {
-        color: #00ade6; }
-  #footer .container .col-md-3 ul li {
-    padding: 5px;
-    color: #fff; }
-    #footer .container .col-md-3 ul li i {
-      width: 40px;
-      color: #1AC6FF;
-      font-size: 25px; }
-    #footer .container .col-md-3 ul li a:hover {
-      color: #00ade6; }
-#footer .row {
-  padding: 70px 0 30px 0;
-  color: #fff;
-  opacity: .5; }
+#client .container .col-md-10 .col-md-4 .clientImg img {
+  border-radius: 100%; }
+#client .container .col-md-10 .col-md-4 .clientAbout h1 {
+  color: red; }
 
 /*# sourceMappingURL=style.css.map */
