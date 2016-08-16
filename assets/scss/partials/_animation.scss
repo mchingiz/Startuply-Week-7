@@ -1,0 +1,70 @@
+.animateUp{
+	animation: animateUp .2s ease;
+	animation-play-state: paused;
+}
+
+.animateDown{
+	animation: animateDown .2s ease;
+	animation-play-state: paused;
+}
+
+.animateRight{
+	animation: animateRight .6s ease;
+	animation-play-state: paused;
+}
+
+.animateLeft{
+	animation: animateLeft .6s ease;
+	animation-play-state: paused;
+}
+
+@keyframes animateUp {
+    from {
+		bottom:-150px;}
+    to {
+		bottom:0px;}
+}
+
+@keyframes animateDown {
+    from {
+		bottom:150px;}
+    to {
+		bottom:0px;}
+}
+
+@keyframes animateRight {
+    from {
+		left:-1500px;
+		opacity: 0;
+	}
+    to {
+		left:0px;
+		opacity: 1;
+	}
+}
+
+@keyframes animateLeft {
+    from {
+		right:-1500px;
+		opacity:0;
+	}
+    to {
+		right:0px;
+		opacity:1;
+	}
+}
+
+// Header opacity
+.fadeIn{
+	animation: fadeIn 1s ease;
+	animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+    from {
+		opacity:0;
+	}
+    to {
+		opacity:1;
+	}
+}

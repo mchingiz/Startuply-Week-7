@@ -1,5 +1,6 @@
 //Partials
 @import "../scss/partials/_variables.scss";
+@import "../scss/partials/_animation.scss";
 
 //Generals
 html, body{
@@ -17,6 +18,10 @@ section{
 }
 
 .row{margin-left:0;margin-right:0}
+
+.container{
+	overflow:hidden;
+}
 
 .btn{
 	background-color: transparent;
@@ -94,7 +99,7 @@ a{
 							color:$mainColor;
 							border-bottom:2px solid $mainColor;}
 					}//li
-					.extra{
+					li.extra{
 						position: relative;
 						line-height: 40px;
 						ul{
@@ -163,7 +168,7 @@ a{
 	color:#fff;
 	height:100%;
 	.container{
-		padding-top:130px;
+		padding-top:100px;
 		font-weight: 300;
 		h1{
 			letter-spacing: 1px;

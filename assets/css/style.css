@@ -1,3 +1,52 @@
+.animateUp {
+  animation: animateUp .2s ease;
+  animation-play-state: paused; }
+
+.animateDown {
+  animation: animateDown .2s ease;
+  animation-play-state: paused; }
+
+.animateRight {
+  animation: animateRight .6s ease;
+  animation-play-state: paused; }
+
+.animateLeft {
+  animation: animateLeft .6s ease;
+  animation-play-state: paused; }
+
+@keyframes animateUp {
+  from {
+    bottom: -150px; }
+  to {
+    bottom: 0px; } }
+@keyframes animateDown {
+  from {
+    bottom: 150px; }
+  to {
+    bottom: 0px; } }
+@keyframes animateRight {
+  from {
+    left: -1500px;
+    opacity: 0; }
+  to {
+    left: 0px;
+    opacity: 1; } }
+@keyframes animateLeft {
+  from {
+    right: -1500px;
+    opacity: 0; }
+  to {
+    right: 0px;
+    opacity: 1; } }
+.fadeIn {
+  animation: fadeIn 1s ease;
+  animation-play-state: paused; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 html, body {
   background-image: url("../../img/bg.jpg");
   background-attachment: fixed;
@@ -14,6 +63,9 @@ section {
 .row {
   margin-left: 0;
   margin-right: 0; }
+
+.container {
+  overflow: hidden; }
 
 .btn {
   background-color: transparent;
@@ -80,30 +132,30 @@ a:focus {
       .navbar-default .container .navbar-menu .navbar-menu-left ul li .active, .navbar-default #process .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, #process .navbar-default .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, .navbar-default #process .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, #process .navbar-default .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, .navbar-default #client .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, #client .navbar-default .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, .navbar-default #client .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover, #client .navbar-default .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover {
         color: #1AC6FF;
         border-bottom: 2px solid #1AC6FF; }
-      .navbar-default .container .navbar-menu .navbar-menu-left ul .extra {
+      .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra {
         position: relative;
         line-height: 40px; }
-        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra ul {
+        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul {
           position: absolute;
           top: 37px;
           left: -1px; }
-        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover {
+        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover {
           background-color: #272727;
           border-top: 5px solid #1AC6FF; }
-          .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover .dropdown-toggle {
+          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover .dropdown-toggle {
             color: #1AC6FF; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover .dropdown-toggle i {
+            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover .dropdown-toggle i {
               color: #1AC6FF; }
-        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu {
+        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu {
           padding: 0; }
-          .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li {
+          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li {
             background-color: #272727; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li a {
+            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li a {
               color: #fff; }
-              .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li a:hover {
+              .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li a:hover {
                 background-image: none;
                 color: #1AC6FF; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li:hover {
+            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li:hover {
               background-color: black; }
     .navbar-default .container .navbar-menu .navbar-menu-right {
       float: right; }
@@ -124,7 +176,7 @@ a:focus {
   color: #fff;
   height: 100%; }
   #header .container {
-    padding-top: 130px;
+    padding-top: 100px;
     font-weight: 300; }
     #header .container h1 {
       letter-spacing: 1px;
