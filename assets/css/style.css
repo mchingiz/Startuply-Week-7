@@ -80,6 +80,31 @@ a:focus {
       .navbar-default .container .navbar-menu .navbar-menu-left ul li .active, .navbar-default #process .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, #process .navbar-default .container .navbar-menu .navbar-menu-left ul li .tabs li:hover, .navbar-default #process .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, #process .navbar-default .container .tabs .navbar-menu .navbar-menu-left ul li li:hover, .navbar-default #client .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, #client .navbar-default .container .navbar-menu .navbar-menu-left ul li .col-md-10 .col-md-4:hover, .navbar-default #client .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover, #client .navbar-default .container .col-md-10 .navbar-menu .navbar-menu-left ul li .col-md-4:hover {
         color: #1AC6FF;
         border-bottom: 2px solid #1AC6FF; }
+      .navbar-default .container .navbar-menu .navbar-menu-left ul .extra {
+        position: relative;
+        line-height: 40px; }
+        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra ul {
+          position: absolute;
+          top: 37px;
+          left: -1px; }
+        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover {
+          background-color: #272727;
+          border-top: 5px solid #1AC6FF; }
+          .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover .dropdown-toggle {
+            color: #1AC6FF; }
+            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra:hover .dropdown-toggle i {
+              color: #1AC6FF; }
+        .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu {
+          padding: 0; }
+          .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li {
+            background-color: #272727; }
+            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li a {
+              color: #fff; }
+              .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li a:hover {
+                background-image: none;
+                color: #1AC6FF; }
+            .navbar-default .container .navbar-menu .navbar-menu-left ul .extra .dropdown-menu li:hover {
+              background-color: black; }
     .navbar-default .container .navbar-menu .navbar-menu-right {
       float: right; }
       .navbar-default .container .navbar-menu .navbar-menu-right ul li button {
@@ -104,12 +129,14 @@ a:focus {
     #header .container h1 {
       letter-spacing: 1px;
       line-height: 63px;
-      font-size: 58px; }
+      font-size: 58px;
+      font-weight: 300; }
       #header .container h1 span {
         color: #1AC6FF; }
     #header .container h3 {
       line-height: 27px;
-      font-size: 24px; }
+      font-size: 24px;
+      font-weight: 300; }
     #header .container ul {
       margin-top: 25px; }
       #header .container ul li:first-child button {
@@ -179,76 +206,83 @@ a:focus {
     #process .container .item .itemContent ul {
       padding-top: 35px; }
 
-#features .container {
-  height: 600px;
-  padding-top: 50px; }
-  #features .container .col-lg-4 {
-    margin-top: 90px;
-    padding: 0; }
-    #features .container .col-lg-4 div {
-      border-radius: 7px 0 0 7px;
-      padding: 15px 95px 15px 20px; }
-      #features .container .col-lg-4 div h5 {
-        color: #1AC6FF;
-        font-size: 17px;
-        font-weight: bold;
-        line-height: 20px;
-        text-transform: uppercase; }
-      #features .container .col-lg-4 div p {
-        font-size: 16px;
-        line-height: 30px;
-        color: #8D8D8D; }
-  #features .container .active, #features #process .container .tabs li:hover, #process #features .container .tabs li:hover, #features #client .container .col-md-10 .col-md-4:hover, #client #features .container .col-md-10 .col-md-4:hover {
-    background-color: #1AC6FF;
-    color: #fff; }
-    #features .container .active h5, #features #process .container .tabs li:hover h5, #process #features .container .tabs li:hover h5, #features #client .container .col-md-10 .col-md-4:hover h5, #client #features .container .col-md-10 .col-md-4:hover h5 {
-      color: #fff !important; }
-  #features .container .col-lg-8 {
-    position: relative;
-    left: -120px;
-    bottom: -40px; }
+#features {
+  margin-bottom: -30px; }
+  #features .container {
+    padding-top: 50px; }
+    #features .container .col-lg-4 {
+      margin-top: 20px;
+      padding: 0; }
+      #features .container .col-lg-4 div {
+        border-radius: 7px 0 0 7px;
+        padding: 15px 95px 15px 20px; }
+        #features .container .col-lg-4 div h5 {
+          color: #1AC6FF;
+          font-size: 17px;
+          font-weight: bold;
+          line-height: 20px;
+          text-transform: uppercase;
+          margin: 0; }
+        #features .container .col-lg-4 div p {
+          font-size: 16px;
+          line-height: 30px;
+          color: #8D8D8D;
+          margin: 0; }
+    #features .container .active, #features #process .container .tabs li:hover, #process #features .container .tabs li:hover, #features #client .container .col-md-10 .col-md-4:hover, #client #features .container .col-md-10 .col-md-4:hover {
+      background-color: #1AC6FF;
+      color: #fff; }
+      #features .container .active h5, #features #process .container .tabs li:hover h5, #process #features .container .tabs li:hover h5, #features #client .container .col-md-10 .col-md-4:hover h5, #client #features .container .col-md-10 .col-md-4:hover h5 {
+        color: #fff !important; }
+    #features .container .col-lg-8 {
+      position: relative;
+      left: -100px;
+      bottom: 0px;
+      /*left:-120px;
+      bottom:-40px;*/ }
 
 #featuresList .container {
   padding-top: 90px;
   padding-bottom: 20px; }
   #featuresList .container .row {
-    margin-bottom: 70px; }
-    #featuresList .container .row .col-md-3 i {
-      font-size: 50px;
-      color: #1AC6FF; }
-      #featuresList .container .row .col-md-3 i:hover {
-        color: #80dfff; }
-    #featuresList .container .row .col-md-3 h6 {
-      text-transform: uppercase;
-      font-size: 16px;
-      margin-bottom: 10px; }
-    #featuresList .container .row .col-md-3 p {
-      color: #8D8D8D;
-      font-size: 15px;
-      line-height: 25px; }
+    margin-bottom: 40px; }
+    #featuresList .container .row .col-md-3 {
+      padding-top: 30px; }
+      #featuresList .container .row .col-md-3 i {
+        font-size: 50px;
+        color: #1AC6FF; }
+        #featuresList .container .row .col-md-3 i:hover {
+          color: #80dfff; }
+      #featuresList .container .row .col-md-3 h6 {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 10px; }
+      #featuresList .container .row .col-md-3 p {
+        color: #8D8D8D;
+        font-size: 15px;
+        line-height: 25px; }
 
 #subscription .container {
   padding: 20px 15px; }
-  #subscription .container .col-md-5 {
+  #subscription .container .col-lg-5 {
     color: #fff; }
-    #subscription .container .col-md-5 h2 {
+    #subscription .container .col-lg-5 h2 {
       font-size: 45px;
       font-weight: 300;
       text-transform: uppercase;
       margin-top: 0; }
-    #subscription .container .col-md-5 p {
+    #subscription .container .col-lg-5 p {
       font-size: 16px;
       line-height: 25px;
       font-weight: 300; }
-  #subscription .container .col-md-7 {
+  #subscription .container .col-lg-7 {
     margin-top: 10px; }
-    #subscription .container .col-md-7 .col-md-4 input {
+    #subscription .container .col-lg-7 .col-lg-4 input {
       border: none;
       border-left: 3px solid #1AC6FF;
       padding: 10px 0 10px 10px;
       height: 50px;
       font-size: 17px; }
-    #subscription .container .col-md-7 .col-md-4 .btn {
+    #subscription .container .col-lg-7 .col-lg-4 .btn {
       border-color: #E9E9E9;
       color: #E9E9E9; }
 
@@ -373,7 +407,6 @@ a:focus {
 #team {
   padding: 50px 15px 25px 15px; }
   #team .row p {
-    width: 900px;
     margin: 20px auto;
     font-weight: 400; }
   #team .container {
@@ -496,5 +529,70 @@ a:focus {
   padding: 70px 0 30px 0;
   color: #fff;
   opacity: .5; }
+
+@media screen and (max-width: 1200px) {
+  .navbar-default .container .navbar-menu .navbar-menu-left ul li a {
+    padding-left: 0;
+    padding-right: 0; }
+  .navbar-default .container .navbar-menu .navbar-menu-right ul li:first-child button {
+    padding-left: 0;
+    padding-right: 0; }
+
+  #process .container .item .itemContent p {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  #process .container .item .itemContent .btn {
+    margin: 0; }
+
+  #features {
+    padding-bottom: 30px; }
+    #features .container {
+      padding-top: 0; }
+      #features .container .col-md-12 {
+        margin-top: 0; }
+        #features .container .col-md-12 .col-md-4 {
+          padding-right: 15px; }
+      #features .container .col-lg-8 {
+        padding-top: 20px;
+        left: calc( 50% - 450px); }
+
+  #team .container .col-md-3 .teamMember .overlap .memberAbout {
+    padding: 5px; } }
+@media screen and (max-width: 992px) {
+  #features .container .col-lg-8 {
+    padding-top: 170px;
+    left: calc( 50% - 350px); }
+
+  #subscription .col-xs-12 input {
+    width: 100%;
+    margin-bottom: 10px; }
+
+  #packages .container .col-md-4 .package .description .btn {
+    padding: 5px; }
+
+  #client .container .col-md-10 .col-md-4 .clientImg {
+    margin-left: 0; }
+  #client .container .col-md-10 .col-md-4 .clientAbout {
+    margin-left: 5px;
+    max-width: 140px; }
+
+  #team .container .col-md-3 .teamMember .overlap .memberAbout ul li {
+    margin-top: 10px; }
+
+  #launch {
+    text-align: center; } }
+@media screen and (max-width: 768px) {
+  #header .container h1 {
+    font-size: 29px; }
+  #header .container h3 {
+    font-size: 19px; }
+
+  #features .container .col-lg-8 {
+    padding-top: 200px;
+    left: calc( 50% - 315px); }
+
+  #subscription .col-xs-12 input {
+    width: 100%;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

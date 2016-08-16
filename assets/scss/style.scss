@@ -87,10 +87,49 @@ a{
 							transition-duration: .2s;
 							padding:15px 8px 15px 8px;
 							&:hover{
-								color:$mainColor;}}
+								color:$mainColor;
+							}
+						}
 						.active{
 							color:$mainColor;
-							border-bottom:2px solid $mainColor;}}}}
+							border-bottom:2px solid $mainColor;}
+					}//li
+					.extra{
+						position: relative;
+						line-height: 40px;
+						ul{
+							position: absolute;
+							top:37px;left:-1px;
+						}
+						&:hover{
+							background-color: $menubg;
+							border-top: 5px solid $mainColor;
+							.dropdown-toggle{
+								color:$mainColor;
+								i{
+								color:$mainColor;
+								}
+							}
+						}
+						.dropdown-menu{
+							padding:0;
+							li{
+								background-color: $menubg;
+								a{
+									color:#fff;
+									&:hover{
+										background-image: none;
+										color:$mainColor;
+									}
+								}
+								&:hover{
+									background-color: darken($menubg,20%);
+								}
+							}
+						}
+					}
+				}
+			}
 			.navbar-menu-right{
 				float:right;
 				ul{
@@ -107,7 +146,16 @@ a{
 								padding-right:5px;
 								&:hover{
 									color:$mainColor;
-									background-color: transparent;}}}}}}}}}
+									background-color: transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 //Header
 
@@ -121,11 +169,15 @@ a{
 			letter-spacing: 1px;
 			line-height: 63px;
 			font-size:58px;
+				font-weight: 300;
 			span{
-				color:$mainColor;}}
+				color:$mainColor;
+			}
+		}
 		h3{
 			line-height: 27px;
-			font-size:24px;}
+			font-size:24px;
+			font-weight: 300;}
 		ul{
 			margin-top:25px;
 			li{
@@ -135,14 +187,23 @@ a{
 						padding-right:50px;
 						background-color: $mainColor;
 						color:white;
-						i{margin-right: 5px;}}}
+						i{margin-right: 5px;}
+					}
+				}
 				&:last-child{
 					button{
 						border-color:#fff;
 						color:#fff;
 						&:hover{
 							background-color: #fff;
-							color:$mainColor;}}}}}}}
+							color:$mainColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 #logos{
 	.container{
@@ -207,11 +268,11 @@ a{
 					padding-top:35px;}}}}}
 
 #features{
+	margin-bottom:-30px;
 	.container{
-		height: 600px;
 		padding-top:50px;
 		.col-lg-4{
-			margin-top:90px;
+			margin-top:20px;
 			padding:0;
 			div{
 				border-radius: 7px 0 0 7px;
@@ -221,11 +282,13 @@ a{
 					font-size:17px;
 					font-weight: bold;
 					line-height: 20px;
-					text-transform: uppercase;}
+					text-transform: uppercase;
+					margin:0;}
 				p{
 					font-size:16px;
 					line-height: 30px;
-					color:$pColor;}}}
+					color:$pColor;
+					margin:0;}}}
 		.active{
 			background-color: $mainColor;
 			color:#fff;
@@ -233,16 +296,19 @@ a{
 				color:#fff !important;}}
 		.col-lg-8{
 			position:relative;
-			left:-120px;
-			bottom:-40px;}}}
+			left:-100px;
+			bottom:0px;
+			/*left:-120px;
+			bottom:-40px;*/}}}
 
 #featuresList{
 	.container{
 		padding-top:90px;
 		padding-bottom:20px;
 		.row{
-			margin-bottom:70px;
+			margin-bottom:40px;
 			.col-md-3{
+				padding-top:30px;
 				i{
 					font-size:50px;
 					color:$mainColor;
@@ -260,7 +326,7 @@ a{
 #subscription{
 	.container{
 		padding:20px 15px;
-		.col-md-5{
+		.col-lg-5{
 			color:#fff;
 			h2{
 				font-size: 45px;
@@ -271,9 +337,9 @@ a{
 				font-size:16px;
 				line-height: 25px;
 				font-weight: 300;}}
-		.col-md-7{
+		.col-lg-7{
 			margin-top:10px;
-			.col-md-4{
+			.col-lg-4{
 				input{
 					border:none;
 					border-left:3px solid $mainColor;
@@ -421,7 +487,6 @@ a{
 	padding:50px 15px 25px 15px;
 	.row{
 		p{
-			width:900px;
 			margin:20px auto;
 			font-weight: 400;}}
 	.container{
@@ -586,3 +651,6 @@ a{
 		opacity:.5;
 	}
 }
+
+//Partials
+@import "../scss/partials/_responsiveness.scss";

@@ -1,0 +1,194 @@
+@media screen and (max-width:1200px){
+
+.navbar-default{
+.container{
+.navbar-menu{
+	.navbar-menu-left{
+		ul{
+			li{
+				a{
+					padding-left:0;
+					padding-right:0;
+				}
+			}
+		}
+	}
+	.navbar-menu-right{
+		ul{
+			li:first-child{
+				button{
+					padding-left:0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+}
+}//end of navbar-default
+	
+#process{
+.container{
+	.item{
+		.itemContent{
+			p{
+				padding-left:0 !important;
+				padding-right:0 !important;
+			}
+			.btn{
+				margin:0;
+			}
+		}
+	}
+}
+}
+
+	#features{
+		padding-bottom:30px;
+		.container{
+			padding-top:0;
+			.col-md-12{
+				.col-md-4{
+					padding-right: 15px;
+				}
+				margin-top:0;
+			}
+			.col-lg-8{
+				padding-top: 20px;
+				left:calc( 50% - 450px);
+			}
+		}
+	}
+	
+	#team{
+		.container{
+			.col-md-3{
+				.teamMember{
+					.overlap{
+						.memberAbout{
+							padding:5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+}//end of media query max-width:1200px
+
+@media screen and (max-width:992px){
+
+	#features{
+		.container{
+			.col-md-12{
+				.col-md-4{
+				}
+			}
+			.col-lg-8{
+				padding-top: 170px;
+				left:calc( 50% - 350px);
+			}
+		}
+	}
+	
+	#subscription{
+		.col-xs-12{
+			input{
+				width:100%;
+				margin-bottom:10px;
+			}
+		}
+	}
+	
+	#packages{
+		.container{
+			.col-md-4{
+				.package{
+					.description{
+						.btn{
+							padding: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#client{
+		.container{
+			.col-md-10{
+				.col-md-4{
+					.clientImg{
+						margin-left:0;
+					}
+					.clientAbout{
+						margin-left:5px;
+						max-width:140px;
+					}
+				}
+			}
+		}
+	}
+	
+	#team{
+		.container{
+			.col-md-3{
+				.teamMember{
+					.overlap{
+						.memberAbout{
+							ul{
+								li{
+									margin-top:10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#launch{
+		text-align: center;
+	}
+}//end of media query max-width:992px
+
+@media screen and (max-width:768px){
+#header{
+.container{
+	h1{
+		font-size:29px;
+	}
+	h3{
+		font-size:19px;
+	}
+}
+}
+	
+#features{
+		.container{
+			.col-md-12{
+				.col-md-4{
+				}
+			}
+			.col-lg-8{
+				padding-top: 200px;
+				left:calc( 50% - 315px);
+			}
+		}
+	}
+
+	
+#subscription{
+	.col-xs-12{
+		input{
+			width:100%;
+			margin-bottom:10px;
+		}
+	}
+}
+	
+}//end of media query max-width:768px
+

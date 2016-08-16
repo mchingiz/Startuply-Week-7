@@ -15,8 +15,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 		
 		<!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- Custom styles -->
@@ -27,31 +27,56 @@
       	
       	
       	<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#">Startup<span>ly</span></a>
-				</div>
-				<div class="navbar-menu">
-					<div class="navbar-menu-left">
-						<ul class="list-inline list-unstyled">
-							<li><a href="#" class="active">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Prices</a></li>
-							<li><a href="#">Feedback</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Contacts</a></li>
-							
+		<div class="container">
+		<div class="nav-header hidden-sm hidden-md">
+			<a href="#">Startup<span>ly</span></a>
+		</div>
+		<div class="navbar-menu hidden-xs">
+			<div class="navbar-menu-left">
+				<ul class="list-inline list-unstyled">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Contacts</a></li>
+					<li class="extra">
+						<a class="dropdown-toggle" type="button" data-toggle="dropdown">
+							Extra
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-toggle" type="button" data-toggle="dropdown">Homepages</a>
+								<ul class="dropdown-submenu list-unstyled">
+									<li><a href="#">Default</a></li>
+									<li><a href="#">Clicked</a></li>
+									<li><a href="#">Falanfilan</a></li>
+									<li><a href="#">Smth</a></li>
+									<li><a href="#">Smth else</a></li>
+									<li><a href="#">ok thing</a></li>
+									<li><a href="#">Not that</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Blogs</a></li>
+							<li><a href="#">Ecommerce</a></li>
+							<li><a href="#">Registration</a></li>
+							<li><a href="#">Forms</a></li>
+							<li><a href="#">Shortcodes</a></li>
 						</ul>
-					</div>
-					<div class="navbar-menu-right">
-						<ul class="list-inline list-unstyled">
-							<li><button class="btn">Login</a></button></li>
-							<li><button class="btn">Sign Up</button></li>
-						</ul>
-					</div>
-				</div>
+					</li>
+
+				</ul>
 			</div>
+			<div class="navbar-menu-right">
+				<ul class="list-inline list-unstyled">
+					<li><button class="btn">Login</a></button></li>
+					<li><button class="btn">Sign Up</button></li>
+				</ul>
+			</div>
+		</div>
+		</div>
 		</nav>
      	
      	<section id="header">
@@ -90,8 +115,8 @@
       			</ul>
       			<!-- Item 1 -->
       			<div class="item row">
-      				<div class="itemImg col-md-6 col-xs-12"><img src="img/people.jpg"></div>
-      				<div class="itemContent col-md-6 col-xs-12" style="text-align:center">
+      				<div class="itemImg col-md-6 col-sm-6 col-xs-12"><img src="img/people.jpg" class="img-responsive"></div>
+      				<div class="itemContent col-md-6 col-sm-6 col-xs-12" style="text-align:center">
       					<h3>For every <span>startup</span></h3>
       					<p style="padding-left:95px;padding-right:95px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
       					<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
@@ -103,17 +128,17 @@
       			</div>
       			<!-- Item 2 -->
       			<div class="item row">
-      				<div class="itemContent col-md-6 col-xs-12" style="text-align:left">
+      				<div class="itemContent col-md-6 col-sm-6 col-xs-12" style="text-align:left">
       					<h3>New age <span>technology</span></h3>
       					<p style="padding-right:190px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
       					<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
       				</div>
-      				<div class="itemImg col-md-6 col-xs-12"><img src="img/mac.png"></div>
+      				<div class="itemImg col-md-6 col-sm-6 col-xs-12"><img src="img/mac.png" class="img-responsive"></div>
       			</div>
       			<!-- Item 3 -->
       			<div class="item row">
-      				<div class="itemImg col-md-6 col-xs-12"><img src="img/helmet.jpg"></div>
-      				<div class="itemContent col-md-6 col-xs-12" style="text-align:right">
+      				<div class="itemImg col-md-6 col-sm-6 col-xs-12"><img src="img/helmet.jpg" class="img-responsive"></div>
+      				<div class="itemContent col-md-6 col-sm-6 col-xs-12" style="text-align:right">
       					<h3>Hang <span>on to</span> your helmet</h3>
       					<p style="padding-left:130px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
       					<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
@@ -126,22 +151,22 @@
       		<div class="container">
       			<div class="col-md-12 col-lg-4">
       				<ul class="list-inline list-unstyled">
-      					<div class="active">
+      					<div class="active col-lg-12 col-md-4 col-sm-4 col-xs-4">
       						<h5>Lorem dolor</h5>
 							<p>Sit amet, consectetur adipiscing elit hac divisione rem ipsam prorsus</p>
       					</div>
-      					<div>
+      					<div class="col-lg-12 col-md-4 col-sm-4 col-xs-4">
       						<h5>Lorem dolor</h5>
 							<p>Sit amet, consectetur adipiscing elit hac divisione rem ipsam prorsus</p>
       					</div>
-      					<div>
+      					<div class="col-lg-12 col-md-4 col-sm-4 col-xs-4">
       						<h5>Lorem dolor</h5>
 							<p>Sit amet, consectetur adipiscing elit hac divisione rem ipsam prorsus</p>
       					</div>
       				</ul>
       			</div>
       			<div class="col-md-12 col-lg-8">
-      				<img src="img/laptop.png">
+      				<img src="img/laptop.png" class="img-responsive">
       			</div>
       		</div>
       	</section>
@@ -149,44 +174,44 @@
       	<section id="featuresList" class="bgwhite">
       		<div class="container">
       			<div class="row">
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-cloud-download" aria-hidden="true"></i>
       					<h6>Feature 1</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
       					<h6>Feature 2</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-desktop" aria-hidden="true"></i>
       					<h6>Feature 3</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
-      					<i class="fa fa-clock" aria-hidden="true"></i>
+      				<div class="col-md-3 col-sm-6 col-xs-12">
+      					<i class="fa fa-star-o" aria-hidden="true"></i>
       					<h6>Feature 4</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
       			</div>
       			<div class="row">
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-magic" aria-hidden="true"></i>
       					<h6>Feature 5</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-bar-chart" aria-hidden="true"></i>
       					<h6>Feature 6</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-shield" aria-hidden="true"></i>
       					<h6>Feature 7</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
       				</div>
-      				<div class="col-md-3 col-xs-12">
+      				<div class="col-md-3 col-sm-6 col-xs-12">
       					<i class="fa fa-star" aria-hidden="true"></i>
       					<h6>Feature 8</h6>
 						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
@@ -197,18 +222,18 @@
       	
       	<section id="subscription">
       		<div class="container">
-      			<div class="col-md-5 col-xs-12">
+      			<div class="col-lg-5 col-md-12">
       				<h2>Get Live Updates</h2>
 					<p>No spam promise - only latest news and prices!</p>
       			</div>
-				<div class="col-md-7">
-					<div class="col-xs-12 col-md-4">
+				<div class="col-lg-7 col-md-12">
+					<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 col-lg-4">
 						<input type="text" placeholder="Your name">
 					</div>
-					<div class="col-xs-12 col-md-4">
+					<div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
 						<input type="text" placeholder="your@email.com">
 					</div>
-					<div class="col-xs-12 col-md-4">
+					<div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
 						<button class="btn">Subscribe</button>
 					</div>
 				</div>
@@ -221,7 +246,7 @@
       				<h1>Product <span>Packages</span></h1>
       				<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
       			</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="package disabled">
 						<h1>Individual</h1>
 						<div class="price">
@@ -239,7 +264,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="package">
 						<h1>Studio</h1>
 						<div class="price">
@@ -257,7 +282,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="package">
 						<h1>Enterprise</h1>
 						<div class="price">
@@ -315,16 +340,16 @@
        	<section id="client" class="bgwhite">
        		<div class="container">
        			<div class="col-md-10 col-md-offset-1">
-       				<div class="col-md-4 col-xs-12">
+       				<div class="col-md-4 col-sm-4 col-xs-12">
        					<div class="clientImg">
        						<img src="img/client1.jpg">
        					</div>
        					<div class="clientAbout">
        						<h1>Amy Warner</h1>
-							<h2>Investor at <span>Pear Inc.</span></h2>
+							<h2>Investor Hunter at <span>Pear Inc.</span></h2>
        					</div>
        				</div>
-       				<div class="col-md-4 col-xs-12 active">
+       				<div class="col-md-4 col-sm-4 col-xs-12 active">
        					<div class="clientImg">
        						<img src="img/client2.jpg">
        					</div>
@@ -333,7 +358,7 @@
 							<h2>Accountant at <span>Vell Inc.</span></h2>
        					</div>
        				</div>
-       				<div class="col-md-4 col-xs-12">
+       				<div class="col-md-4 col-sm-4 col-xs-12">
        					<div class="clientImg">
        						<img src="img/client1.jpg">
        					</div>
@@ -347,21 +372,22 @@
        	</section>
        	
        	<section id="team" class="bgwhite">
-       		<div class="row sectionHeader">
-       			<h1>Behind <span>The</span> Scenes</h1>
-       			<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
-       			
-       			<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione. In his rest gestiret. Sed ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
-       		</div>
+       		
        		<div class="container">
-       			<div class="col-md-3 col-xs-12">
+					<div class="row sectionHeader">
+						<h1>Behind <span>The</span> Scenes</h1>
+						<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
+
+						<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione. In his rest gestiret. Sed ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
+					</div>
+       			<div class="col-md-3  col-sm-3 col-xs-6">
        				<div class="teamMember">
        					<div class="overlap">
 							<div class="memberImg">
 								<img src="img/team1.jpg">
 							</div>
 							<div class="memberAbout">
-								<p>Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
+								<p class="hidden-md hidden-sm hidden-xs">Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
 								<ul class="list-inline list-usntyled">
 									<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -375,14 +401,14 @@
 						<h2>Developer</h2>
        				</div>
        			</div>
-       			<div class="col-md-3 col-xs-12">
+       			<div class="col-md-3  col-sm-3 col-xs-6">
        				<div class="teamMember">
        					<div class="overlap">
 							<div class="memberImg">
 								<img src="img/team2.jpg">
 							</div>
 							<div class="memberAbout">
-								<p>Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
+								<p class="hidden-md hidden-sm">Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
 								<ul class="list-inline list-usntyled">
 									<li><a href="#"><i class="fa fa-skype"></i></a></li>
 								</ul>
@@ -392,14 +418,14 @@
 						<h2>Developer</h2>
        				</div>
        			</div>
-       			<div class="col-md-3 col-xs-12">
+       			<div class="col-md-3  col-sm-3 col-xs-6">
        				<div class="teamMember">
        					<div class="overlap">
 							<div class="memberImg">
 								<img src="img/team3.jpg">
 							</div>
 							<div class="memberAbout">
-								<p>Ellen has over 13 years of experience in development projects as a senior consultant and project manager in the areas of project management.</p>
+								<p class="hidden-md hidden-sm">Ellen has over 13 years of experience in development projects as a senior consultant and project manager in the areas of project management.</p>
 								<ul class="list-inline list-usntyled">
 									<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -413,14 +439,14 @@
 						<h2>Developer</h2>
        				</div>
        			</div>
-       			<div class="col-md-3 col-xs-12">
+       			<div class="col-md-3  col-sm-3 col-xs-6">
        				<div class="teamMember">
        					<div class="overlap">
 							<div class="memberImg">
 								<img src="img/team4.jpg">
 							</div>
 							<div class="memberAbout">
-								<p>Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
+								<p class="hidden-md hidden-sm">Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
 								<ul class="list-inline list-usntyled">
 									<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -444,7 +470,7 @@
        				<i class="fa fa-power-off" aria-hidden="true"></i>
        			</div>
        			<div class="col-md-8 col-xs-12">
-       				<h1>LAunch your startup now</h1>
+       				<h1>Launch your startup now</h1>
 					<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p>
        			</div>
        			<div class="col-md-3 col-xs-12">
@@ -457,12 +483,12 @@
        	
        	<section id="footer">
        		<div class="container">
-       			<div class="col-md-4">
+       			<div class="col-md-4 col-sm-4 col-xs-12">
 					<h1>Startuply</h1>
 					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco. Qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Nisi ut aliquid ex ea commodi consequatur?</p>
 					<h3>John Doeson, Founder.</h3>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 col-sm-5 col-xs-12">
 					<h2>Social Networks</h2>
 					<div class="socialNetworks">
 						<div class="socialItem">
@@ -491,7 +517,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<h2>Our Contacts</h2>
 					<ul class="list-unstyled">
 						<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:info@startup.ly">info@startup.ly</a></li>
