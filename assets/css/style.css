@@ -1,9 +1,9 @@
 .animateUp {
-  animation: animateUp .2s ease;
+  animation: animateUp 1s ease;
   animation-play-state: paused; }
 
 .animateDown {
-  animation: animateDown .2s ease;
+  animation: animateDown 1s ease;
   animation-play-state: paused; }
 
 .animateRight {
@@ -14,16 +14,6 @@
   animation: animateLeft .6s ease;
   animation-play-state: paused; }
 
-@keyframes animateUp {
-  from {
-    bottom: -150px; }
-  to {
-    bottom: 0px; } }
-@keyframes animateDown {
-  from {
-    bottom: 150px; }
-  to {
-    bottom: 0px; } }
 @keyframes animateRight {
   from {
     left: -1500px;
@@ -38,6 +28,16 @@
   to {
     right: 0px;
     opacity: 1; } }
+@keyframes animateUp {
+  from {
+    bottom: -1500px; }
+  to {
+    bottom: 0px; } }
+@keyframes animateDown {
+  from {
+    top: -1500px; }
+  to {
+    top: 0px; } }
 .fadeIn {
   animation: fadeIn 1s ease;
   animation-play-state: paused; }
@@ -213,16 +213,10 @@ a:focus {
     padding: 0px 25px; }
     #logos .container ul li img {
       position: relative; }
-    #logos .container ul li:first-child img {
-      animation-delay: 0.2s; }
-    #logos .container ul li:nth-child(2) img {
-      animation-delay: 0.4s; }
-    #logos .container ul li:nth-child(3) img {
-      animation-delay: 0.6s; }
-    #logos .container ul li:nth-child(4) img {
-      animation-delay: .8s; }
-    #logos .container ul li:last-child img {
-      animation-delay: 1s; }
+    #logos .container ul li:nth-child(odd) img {
+      bottom: -450px; }
+    #logos .container ul li:nth-child(even) img {
+      bottom: 450px; }
 
 #process .container {
   padding-top: 60px; }
@@ -231,7 +225,8 @@ a:focus {
     #process .container .tabs li {
       margin: -2px;
       padding: 20px 60px;
-      border: 1px solid #E9E9E9; }
+      border: 1px solid #E9E9E9;
+      cursor: pointer; }
       #process .container .tabs li a {
         font-size: 13px;
         text-transform: uppercase; }

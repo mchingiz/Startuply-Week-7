@@ -220,16 +220,20 @@ a{
 				padding:0px 25px;
 				img{
 					position: relative;}
-				&:first-child{
-					img{animation-delay: 0.2s}}
-				&:nth-child(2){
-					img{animation-delay: 0.4s}}
-				&:nth-child(3){
-					img{animation-delay: 0.6s}}
-				&:nth-child(4){
-					img{animation-delay: .8s}}
-				&:last-child{
-					img{animation-delay: 1s}}}}}}
+				&:nth-child(odd){
+					img{
+						bottom:-450px;
+					}
+				}
+				&:nth-child(even){
+					img{
+						bottom:450px;
+					}
+				}
+			}
+		}
+	}
+}
 
 #process{
 	.container{
@@ -240,8 +244,8 @@ a{
 				margin:-2px;
 				padding:20px 60px;
 				border:1px solid $borderColor;
+				cursor: pointer;
 				a{
-					
 					font-size:13px;
 					text-transform: uppercase;}
 				&:hover{
