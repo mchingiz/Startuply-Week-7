@@ -1,16 +1,20 @@
 .animateUp {
+  position: relative;
   animation: animateUp 1s ease;
   animation-play-state: paused; }
 
 .animateDown {
+  position: relative;
   animation: animateDown 1s ease;
   animation-play-state: paused; }
 
 .animateRight {
+  position: relative;
   animation: animateRight .6s ease;
   animation-play-state: paused; }
 
 .animateLeft {
+  position: relative;
   animation: animateLeft .6s ease;
   animation-play-state: paused; }
 
@@ -48,17 +52,27 @@
     top: 20px; }
   100% {
     top: 0px; } }
-.fadeIn {
-  animation: fadeIn .5s ease;
+.scaleIn {
+  animation: scaleIn .5s ease;
   animation-play-state: paused; }
 
-@keyframes fadeIn {
+@keyframes scaleIn {
   0% {
     transform: scale(0, 0); }
   55% {
     transform: scale(1.2, 1.2); }
   100% {
     transform: scale(1, 1); } }
+/*.rotateAroundY{
+	animation: rotateAroundY .6s ease;
+	animation-play-state:paused;
+}
+
+@keyframes rotateAroundY {
+    0% {
+		width:0;}
+    100% {
+		width:auto;}}*/
 html, body {
   background-image: url("../../img/bg.jpg");
   background-attachment: fixed;
@@ -70,7 +84,8 @@ html, body {
   font-family: 'Lato'; }
 
 section {
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .row {
   margin-left: 0;
@@ -273,7 +288,8 @@ a:focus {
         text-transform: uppercase; }
 
 #features {
-  margin-bottom: -30px; }
+  margin-bottom: -30px;
+  background-color: #F0F0F0; }
   #features .container {
     padding-top: 50px; }
     #features .container .col-lg-4 {
@@ -281,7 +297,8 @@ a:focus {
       padding: 0; }
       #features .container .col-lg-4 div {
         border-radius: 7px 0 0 7px;
-        padding: 15px 95px 15px 20px; }
+        padding: 15px 95px 15px 20px;
+        cursor: pointer; }
         #features .container .col-lg-4 div h5 {
           color: #1AC6FF;
           font-size: 17px;
@@ -302,9 +319,9 @@ a:focus {
     #features .container .col-lg-8 {
       position: relative;
       left: -100px;
-      bottom: 0px;
-      /*left:-120px;
-      bottom:-40px;*/ }
+      bottom: 0px; }
+      #features .container .col-lg-8 img {
+        position: relative; }
 
 #featuresList .container {
   padding-top: 90px;
@@ -459,6 +476,8 @@ a:focus {
       color: #E3E3E3; }
       #client .container .col-md-10 .col-md-4 .clientAbout h2 span {
         transition-duration: .0s; }
+  #client .container .col-md-10 .col-md-4:hover {
+    border-color: #E9E9E9 !important; }
 #client .container .col-md-10 .active, #client #process .container .col-md-10 .tabs li:hover, #process #client .container .col-md-10 .tabs li:hover, #client #process .container .tabs .col-md-10 li:hover, #process #client .container .tabs .col-md-10 li:hover, #client .container .col-md-10 .col-md-4:hover {
   border-bottom-color: #1AC6FF; }
   #client .container .col-md-10 .active .clientImg img, #client #process .container .col-md-10 .tabs li:hover .clientImg img, #process #client .container .col-md-10 .tabs li:hover .clientImg img, #client #process .container .tabs .col-md-10 li:hover .clientImg img, #process #client .container .tabs .col-md-10 li:hover .clientImg img, #client .container .col-md-10 .col-md-4:hover .clientImg img {
@@ -475,6 +494,8 @@ a:focus {
   #team .row p {
     margin: 20px auto;
     font-weight: 400; }
+    #team .row p:last-child {
+      padding-bottom: 60px; }
   #team .container {
     padding-top: 60px; }
     #team .container .col-md-3 .teamMember .overlap {

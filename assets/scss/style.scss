@@ -15,6 +15,7 @@ html, body{
 
 section{
 	text-align: center;
+	overflow: hidden;
 }
 
 .row{margin-left:0;margin-right:0}
@@ -293,6 +294,7 @@ a{
 
 #features{
 	margin-bottom:-30px;
+	background-color:#F0F0F0;
 	.container{
 		padding-top:50px;
 		.col-lg-4{
@@ -301,6 +303,7 @@ a{
 			div{
 				border-radius: 7px 0 0 7px;
 				padding:15px 95px 15px 20px;
+				cursor:pointer;
 				h5{
 					color:$mainColor;
 					font-size:17px;
@@ -322,8 +325,12 @@ a{
 			position:relative;
 			left:-100px;
 			bottom:0px;
-			/*left:-120px;
-			bottom:-40px;*/}}}
+			img{
+				position: relative;
+			}
+		}
+	}
+}
 
 #featuresList{
 	.container{
@@ -494,7 +501,8 @@ a{
 						span{
 							transition-duration: .0s;}}}
 				&:hover{
-					@extend .active;}}
+					@extend .active;
+					border-color:$borderColor !important;}}
 			.active{
 				border-bottom-color: $mainColor;
 				.clientImg{
@@ -512,7 +520,9 @@ a{
 	.row{
 		p{
 			margin:20px auto;
-			font-weight: 400;}}
+			font-weight: 400;
+			&:last-child{
+				padding-bottom: 60px;}}}
 	.container{
 		padding-top:60px;
 		.col-md-3{

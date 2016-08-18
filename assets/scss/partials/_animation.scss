@@ -1,16 +1,20 @@
 .animateUp{
+	position:relative;
 	animation: animateUp 1s ease;
 	animation-play-state: paused;}
 
 .animateDown{
+	position:relative;
 	animation: animateDown 1s ease;
 	animation-play-state: paused;}
 
 .animateRight{
+	position:relative;
 	animation: animateRight .6s ease;
 	animation-play-state: paused;}
 
 .animateLeft{
+	position:relative;
 	animation: animateLeft .6s ease;
 	animation-play-state: paused;}
 
@@ -52,15 +56,27 @@
     100% {
 		top:0px;}}
 
-// Header opacity
-.fadeIn{
-	animation: fadeIn .5s ease;
+// Scale In animation
+.scaleIn{
+	animation: scaleIn .5s ease;
 	animation-play-state: paused;}
 
-@keyframes fadeIn {
+@keyframes scaleIn {
     0% {
 		transform:scale(0,0);}
 	 55% {
 		transform:scale(1.2,1.2);}
     100% {
 		transform:scale(1,1);}}
+
+//Features section animations
+/*.rotateAroundY{
+	animation: rotateAroundY .6s ease;
+	animation-play-state:paused;
+}
+
+@keyframes rotateAroundY {
+    0% {
+		width:0;}
+    100% {
+		width:auto;}}*/
