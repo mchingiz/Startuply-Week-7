@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     </head>
     <body>
-     
+   
      
 	<nav class="navbar navbar-default">
 	<div class="container">
@@ -128,7 +128,7 @@
 			</ul>
 			<!-- Item 1 -->
 				<!-- TAB 1 -->
-			<div class="item row" id="item11" style="background-color:firebrick">
+			<div class="item row" id="item11">
 				<div class="itemImg col-md-6 col-sm-6 col-xs-12 animateRight"><img src="img/people.jpg" class="img-responsive"></div>
 				<div class="itemContent col-md-6 col-sm-6 col-xs-12 animateLeft" style="text-align:center">
 					<h3>For every <span>startup</span></h3>
@@ -141,7 +141,7 @@
 				</div>
 			</div>
 				<!-- TAB 2 -->
-			<div class="item row" id="item12" style="background-color:lightblue">
+			<div class="item row" id="item12">
 				<div class="itemContent col-md-6 col-sm-6 col-xs-12 animateRight" style="text-align:center">
 					<h3>New Age <span>Technology</span></h3>
 					<p style="padding-left:95px;padding-right:95px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
@@ -154,17 +154,25 @@
 				<div class="itemImg col-md-6 col-sm-6 col-xs-12 animateLeft"><img src="img/phone.jpg" class="img-responsive"></div>
 			</div>
 				<!-- TAB 3 -->
-			<div class="item row" id="item13" style="background-color:lightgreen">
+			<div class="item row" id="item13">
 				<div class="itemContent col-md-12 col-sm-12 col-xs-12" style="text-align:center">
-					<h3 class="animateDown">3 Easy Steps</h3>
-					<p style="padding-left:95px;padding-right:95px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
-						<div class="col-md-4"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
-						<div class="col-md-4"><i class="fa fa-magnet" aria-hidden="true"></i></div>
-						<div class="col-md-4"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
-					<ul class="list-inline list-unstyled">
-						<li><button class="btn">Get Template</a></button></li>
-						<li><button class="btn">See Elements</button></li>
-					</ul>
+					<h3 class="fadeIn">3 Easy Steps</h3>
+					<p class="fadeIn" style="padding-left:95px;padding-right:95px">Lorem ipsum dolor sit atmet sit dolor greand fdanrh sdfs sit atmet sit dolor greand fdanrh sdfs</p>
+						<div class="animateDown col-md-4 col-sm-4 col-xs-12">
+							<i class="fa fa-credit-card" aria-hidden="true"></i>
+							<h4>Place Order</h4>
+							<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						</div>
+						<div class="animateDown col-md-4 col-sm-4 col-xs-12">
+							<i class="fa fa-magnet" aria-hidden="true"></i>
+							<h4>Our System Runs</h4>
+							<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						</div>
+						<div class="animateDown col-md-4 col-sm-4 col-xs-12">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+							<h4>Receive Report</h4>
+							<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						</div>
 				</div>
 			</div>
 			<!-- Item 2 -->
@@ -582,77 +590,85 @@
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="assets/js/vendor/bootstrap.min.js"></script>
 		<script src="assets/js/plugins.js"></script>
-		<script src="assets/js/main.js"></script>
    	<script>
+
+	//Header resize animation
+setInterval(function(){
+	var h=$(window).height();
+	$("#header > .container").css("padding-top",(h/2)-200+"px");
+},200);
+
+//Header fade in animation
+$("#header .fadeIn").css("animation-play-state","running");
 			
-			//Header resize animation
-			setInterval(function(){
-				var h=$(window).height();
-				$("#header > .container").css("padding-top",(h/2)-200+"px");
-			},200);
-			
-			//Header fade in animation
-			$("#header .fadeIn").css("animation-play-state","running");
-			
-			//Scroll animations
-			$(window).scroll(function(){
-				var wHeight=$(this).height();
-				var wScroll=$(this).scrollTop();
-				
-				//Logos animation
-				var i;
-				i=1;
-				if( wScroll > ( $("#logos").offset().top - wHeight/1.4) ){
-					var logoAnimations=setInterval(function(){
-						$("#logos")
-							.find(".container ul li:nth-child("+i+") img")
-							.animate({"bottom": "0"},200)
-						i++;
-						if(i==6){clearInterval(logoAnimations)}
-					},200)
-				}
-				
-				//Process item animations
-				if( wScroll > ( $("#process .container #item11").offset().top - wHeight/1.8) ){
-					$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
-				}
-				if( wScroll > ( $("#process .container #item2").offset().top - wHeight/1.4) ){
-					$("#item2 .animateRight, #item2 .animateLeft").css("animation-play-state","running");
-				}
-				if( wScroll > ( $("#process .container #item3").offset().top - wHeight/1.4) ){
-					$("#item3 .animateRight, #item3 .animateLeft").css("animation-play-state","running");
-				}
-				
-				//Process tab animations
-				$("#tab1").on("click",function(){
-					$("#process .container ul li").removeClass("active");
-					$("#tab1").addClass("active");
-					$("#item11").show();
-					$("#item12").hide();
-					$("#item13").hide();
-					$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
-				})
-				
-				$("#tab2").on("click",function(){
-					$("#process .container ul li").removeClass("active");
-					$("#tab2").addClass("active");
-					$("#item11").hide();
-					$("#item12").show();
-					$("#item13").hide();
-					$("#item12 .animateRight, #item12 .animateLeft").css("animation-play-state","running");
-				})
-				
-				$("#tab3").on("click",function(){
-					$("#process .container ul li").removeClass("active");
-					$("#tab3").addClass("active");
-					$("#item11").hide();
-					$("#item12").hide();
-					$("#item13").show();
-					$("#item13 .animateDown").css("animation-play-state","running");
-				})
-				
-			});//end of scroll method
-			
-		</script>
+
+//Hide content of second and third tab
+$("#item12").hide();
+$("#item13").hide();
+
+//Scroll animations
+$(window).scroll(function(){
+	var wHeight=$(this).height();
+	var wScroll=$(this).scrollTop();
+
+	//Logos animation
+	var i;
+	i=1;
+	if( wScroll > ( $("#logos").offset().top - wHeight/1.4) ){
+		var logoAnimations=setInterval(function(){
+			$("#logos")
+				.find(".container ul li:nth-child("+i+") img")
+				.animate({"bottom": "0"},200)
+			i++;
+			if(i==6){clearInterval(logoAnimations)}
+		},200)
+	}
+
+	//Process item animations
+	if( wScroll > ( $("#process .container #item11").offset().top - wHeight/1.8) ){
+		$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
+	}
+	if( wScroll > ( $("#process .container #item2").offset().top - wHeight/1.4) ){
+		$("#item2 .animateRight, #item2 .animateLeft").css("animation-play-state","running");
+	}
+	if( wScroll > ( $("#process .container #item3").offset().top - wHeight/1.4) ){
+		$("#item3 .animateRight, #item3 .animateLeft").css("animation-play-state","running");
+	}
+
+	//Process tab animations
+	$("#tab1").on("click",function(){
+		$("#process .container ul li").removeClass("active");
+		$("#tab1").addClass("active");
+		$("#item11").show();
+		$("#item12").hide();
+		$("#item13").hide();
+		$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
+	})
+
+	$("#tab2").on("click",function(){
+		$("#process .container ul li").removeClass("active");
+		$("#tab2").addClass("active");
+		$("#item11").hide();
+		$("#item12").show();
+		$("#item13").hide();
+		$("#item12 .animateRight, #item12 .animateLeft").css("animation-play-state","running");
+	})
+
+	$("#tab3").on("click",function(){
+		$("#process .container ul li").removeClass("active");
+		$("#tab3").addClass("active");
+		$("#item11").hide();
+		$("#item12").hide();
+		$("#item13").show();
+		$("#item13 .fadeIn").css("animation-play-state","running");
+		setTimeout(function(){
+			$("#item13 .animateDown").css("animation-play-state","running");
+		},250)
+	})
+
+});//end of scroll method
+
+</script>
+
     </body>
 </html>

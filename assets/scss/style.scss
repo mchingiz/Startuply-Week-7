@@ -274,7 +274,22 @@ a{
 					font-size: 16px;
 				}
 				ul{
-					padding-top:35px;}}}}}
+					padding-top:35px;
+				}
+				.col-md-4{
+					padding-top:70px;
+					i{
+						color:$mainColor;
+						font-size:60px;
+					}
+					h4{
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
 
 #features{
 	margin-bottom:-30px;
