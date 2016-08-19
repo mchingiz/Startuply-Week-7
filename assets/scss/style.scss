@@ -455,21 +455,30 @@ a{
 			h1{
 				color:#fff;
 			}}
-		i{
-			color:$mainColor;
-			font-size: 30px;
-			position: relative;
-			top:10px;}
-		p{
-			color:#fff;
-			font-size:17px;
-			font-weight: 300;
-			line-height: 25px;}}}
+		.quote{
+			i{
+				color:$mainColor;
+				font-size: 30px;
+				position: relative;
+				top:10px;}
+			p{
+				color:#fff;
+				font-size:17px;
+				font-weight: 300;
+				line-height: 25px;
+			}
+		}
+		.container{
+			padding:0 ;
+		}
+	}
+}
 
 #client{
 	.container{
 		.col-md-10{
 			.col-md-4{
+				cursor: pointer;
 				padding:40px 0 35px 0;
 				border-bottom: 1px solid
 				$borderColor;
@@ -502,9 +511,9 @@ a{
 							transition-duration: .0s;}}}
 				&:hover{
 					@extend .active;
-					border-color:$borderColor !important;}}
+					border-color:$borderColor;}}
 			.active{
-				border-bottom-color: $mainColor;
+				border-bottom-color: $mainColor !important;
 				.clientImg{
 					img{
 						opacity:1;}}

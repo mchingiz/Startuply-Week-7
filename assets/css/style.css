@@ -435,18 +435,21 @@ a:focus {
   padding: 30px 15px 40px 15px; }
   #clientQuote .container .row h1 {
     color: #fff; }
-  #clientQuote .container i {
+  #clientQuote .container .quote i {
     color: #1AC6FF;
     font-size: 30px;
     position: relative;
     top: 10px; }
-  #clientQuote .container p {
+  #clientQuote .container .quote p {
     color: #fff;
     font-size: 17px;
     font-weight: 300;
     line-height: 25px; }
+  #clientQuote .container .container {
+    padding: 0; }
 
 #client .container .col-md-10 .col-md-4 {
+  cursor: pointer;
   padding: 40px 0 35px 0;
   border-bottom: 1px solid #E9E9E9; }
   #client .container .col-md-10 .col-md-4 .clientImg {
@@ -477,9 +480,9 @@ a:focus {
       #client .container .col-md-10 .col-md-4 .clientAbout h2 span {
         transition-duration: .0s; }
   #client .container .col-md-10 .col-md-4:hover {
-    border-color: #E9E9E9 !important; }
+    border-color: #E9E9E9; }
 #client .container .col-md-10 .active, #client #process .container .col-md-10 .tabs li:hover, #process #client .container .col-md-10 .tabs li:hover, #client #process .container .tabs .col-md-10 li:hover, #process #client .container .tabs .col-md-10 li:hover, #client .container .col-md-10 .col-md-4:hover {
-  border-bottom-color: #1AC6FF; }
+  border-bottom-color: #1AC6FF !important; }
   #client .container .col-md-10 .active .clientImg img, #client #process .container .col-md-10 .tabs li:hover .clientImg img, #process #client .container .col-md-10 .tabs li:hover .clientImg img, #client #process .container .tabs .col-md-10 li:hover .clientImg img, #process #client .container .tabs .col-md-10 li:hover .clientImg img, #client .container .col-md-10 .col-md-4:hover .clientImg img {
     opacity: 1; }
   #client .container .col-md-10 .active .clientAbout h1, #client #process .container .col-md-10 .tabs li:hover .clientAbout h1, #process #client .container .col-md-10 .tabs li:hover .clientAbout h1, #client #process .container .tabs .col-md-10 li:hover .clientAbout h1, #process #client .container .tabs .col-md-10 li:hover .clientAbout h1, #client .container .col-md-10 .col-md-4:hover .clientAbout h1 {
