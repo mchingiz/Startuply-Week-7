@@ -3,80 +3,96 @@
 	animation: animateUp 1s ease;
 	animation-play-state: paused;}
 
+	@keyframes animateUp {
+		 0% {
+			bottom:-1500px;}
+		 55% {
+			bottom:20px;}
+		 100% {
+			bottom:0px;}}
+
 .animateDown{
 	position:relative;
 	animation: animateDown 1s ease;
 	animation-play-state: paused;}
+
+	@keyframes animateDown {
+		 0% {
+			top:-1500px;}
+		 55% {
+			top:20px;}
+		 100% {
+			top:0px;}}
 
 .animateRight{
 	position:relative;
 	animation: animateRight .6s ease;
 	animation-play-state: paused;}
 
+	@keyframes animateRight {
+		 0% {
+			left:-1500px;
+			opacity: 0;}
+		 55% {
+			left:20px;
+			opacity: .8;}
+		 100% {
+			left:0px;
+			opacity: 1;}}
+
 .animateLeft{
 	position:relative;
 	animation: animateLeft .6s ease;
 	animation-play-state: paused;}
 
-@keyframes animateRight {
-    0% {
-		left:-1500px;
-		opacity: 0;}
-	 55% {
-		left:20px;
-		opacity: .8;}
-    100% {
-		left:0px;
-		opacity: 1;}}
+	@keyframes animateLeft {
+		 0% {
+			right:-1500px;
+			opacity:0;}
+		 55% {
+			right:20px;
+			opacity:.8;}
+		100% {
+			right:0px;
+			opacity:1;}}
 
-@keyframes animateLeft {
-    0% {
-		right:-1500px;
-		opacity:0;}
-    55% {
-		right:20px;
-		opacity:.8;}
-	100% {
-		right:0px;
-		opacity:1;}}
+// Scale In animation (for 3rd tab of 'Process' section)
 
-@keyframes animateUp {
-    0% {
-		bottom:-1500px;}
-	 55% {
-		bottom:20px;}
-    100% {
-		bottom:0px;}}
-
-@keyframes animateDown {
-    0% {
-		top:-1500px;}
-	 55% {
-		top:20px;}
-    100% {
-		top:0px;}}
-
-// Scale In animation
 .scaleIn{
 	animation: scaleIn .5s ease;
 	animation-play-state: paused;}
 
-@keyframes scaleIn {
-    0% {
-		transform:scale(0,0);}
-	 55% {
-		transform:scale(1.2,1.2);}
-    100% {
-		transform:scale(1,1);}}
+	@keyframes scaleIn {
+		 0% {
+			transform:scale(0,0);}
+		 55% {
+			transform:scale(1.2,1.2);}
+		 100% {
+			transform:scale(1,1);}}
 
-//Features section animations
-/*.rotateAroundY{
-	animation: rotateAroundY .6s ease;
-	animation-play-state:paused;
-}
+// Fade In animation (for header)
 
-@keyframes rotateAroundY {
-    0% {
-		width:0;}
-    100% {
-		width:auto;}}*/
+.fadeIn{
+	animation: fadeIn 1s ease;
+	animation-play-state: paused;}
+
+	@keyframes fadeIn {
+		 0% {
+			opacity: 0;}
+		 100% {
+			opacity: 1;}}
+
+// Fixed menu animation
+
+/*.animateDown{
+	position:relative;
+	animation: animateDown 1s ease;
+	animation-play-state: paused;}
+
+	@keyframes animateDown {
+		 0% {
+			top:-1500px;}
+		 55% {
+			top:20px;}
+		 100% {
+			top:0px;}}*/

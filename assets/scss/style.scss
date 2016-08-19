@@ -62,8 +62,17 @@ a{
 		font-size: 16px;
 		font-weight: 300;
 		line-height: 25px;}}
-//Navbar
 
+.menuListHover{
+	background-color: $menubg;
+	ul{
+		color:$mainColor;
+		> i{
+		color:$mainColor;
+		}
+	}
+}
+//Navbar
 .navbar-default{
 	background-color: transparent !important;
 	background-image:none;
@@ -73,11 +82,13 @@ a{
 	.container{
 		background-color:transparent;
 		line-height: 70px;
+		overflow: visible;
 		.nav-header{
 			float:left;
 			a{
 				color:#fff;
 				font-size: 32px;
+				font-weight: 300;
 				margin-right:55px;
 				span{
 					color:$mainColor;}}}
@@ -85,6 +96,15 @@ a{
 			.navbar-menu-left{
 				float:left;
 				ul{
+					i{
+						color:#fff;
+					}
+					.fa-caret-right{
+						float:right;
+						position: relative;
+						top:13px;
+						right:5px;
+					}
 					li{
 						a{
 							color:#CDBED4;
@@ -103,35 +123,26 @@ a{
 					li.extra{
 						position: relative;
 						line-height: 40px;
-						ul{
+						ul.extra{
+							width:140px;
+							background-color: $menubg;
 							position: absolute;
-							top:37px;left:-1px;
+							top:37px;left:0px;
+							ul.homepages, ul.blog, ul.ecommerce{
+								background-color: $menubg;
+								position: absolute;
+								top:0;left:100%;
+								&:hover{
+									@extend .menuListHover;
+								}
+							}
+							ul.ecommerce{
+								width:200px;
+							}
 						}
 						&:hover{
-							background-color: $menubg;
+							@extend .menuListHover;
 							border-top: 5px solid $mainColor;
-							.dropdown-toggle{
-								color:$mainColor;
-								i{
-								color:$mainColor;
-								}
-							}
-						}
-						.dropdown-menu{
-							padding:0;
-							li{
-								background-color: $menubg;
-								a{
-									color:#fff;
-									&:hover{
-										background-image: none;
-										color:$mainColor;
-									}
-								}
-								&:hover{
-									background-color: darken($menubg,20%);
-								}
-							}
 						}
 					}
 				}
@@ -162,7 +173,28 @@ a{
 		}
 	}
 }
-
+.navbar-fixed-top{
+	background-color: #fff !important;
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+	a{
+		color:#000 !important;
+	}
+	li.extra:hover{
+		a{
+			color:#fff !important;
+		}
+	}
+	ul.extra{
+		a{
+			color:#fff !important;
+		}
+	}
+	button{
+		color:#000 !important;
+	}
+}
 //Header
 
 #header{

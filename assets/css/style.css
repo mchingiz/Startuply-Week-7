@@ -3,19 +3,28 @@
   animation: animateUp 1s ease;
   animation-play-state: paused; }
 
+@keyframes animateUp {
+  0% {
+    bottom: -1500px; }
+  55% {
+    bottom: 20px; }
+  100% {
+    bottom: 0px; } }
 .animateDown {
   position: relative;
   animation: animateDown 1s ease;
   animation-play-state: paused; }
 
+@keyframes animateDown {
+  0% {
+    top: -1500px; }
+  55% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
 .animateRight {
   position: relative;
   animation: animateRight .6s ease;
-  animation-play-state: paused; }
-
-.animateLeft {
-  position: relative;
-  animation: animateLeft .6s ease;
   animation-play-state: paused; }
 
 @keyframes animateRight {
@@ -28,6 +37,11 @@
   100% {
     left: 0px;
     opacity: 1; } }
+.animateLeft {
+  position: relative;
+  animation: animateLeft .6s ease;
+  animation-play-state: paused; }
+
 @keyframes animateLeft {
   0% {
     right: -1500px;
@@ -38,20 +52,6 @@
   100% {
     right: 0px;
     opacity: 1; } }
-@keyframes animateUp {
-  0% {
-    bottom: -1500px; }
-  55% {
-    bottom: 20px; }
-  100% {
-    bottom: 0px; } }
-@keyframes animateDown {
-  0% {
-    top: -1500px; }
-  55% {
-    top: 20px; }
-  100% {
-    top: 0px; } }
 .scaleIn {
   animation: scaleIn .5s ease;
   animation-play-state: paused; }
@@ -63,16 +63,27 @@
     transform: scale(1.2, 1.2); }
   100% {
     transform: scale(1, 1); } }
-/*.rotateAroundY{
-	animation: rotateAroundY .6s ease;
-	animation-play-state:paused;
-}
+.fadeIn {
+  animation: fadeIn 1s ease;
+  animation-play-state: paused; }
 
-@keyframes rotateAroundY {
-    0% {
-		width:0;}
-    100% {
-		width:auto;}}*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/*.animateDown{
+	position:relative;
+	animation: animateDown 1s ease;
+	animation-play-state: paused;}
+
+	@keyframes animateDown {
+		 0% {
+			top:-1500px;}
+		 55% {
+			top:20px;}
+		 100% {
+			top:0px;}}*/
 html, body {
   background-image: url("../../img/bg.jpg");
   background-attachment: fixed;
@@ -129,6 +140,13 @@ a:focus {
   font-weight: 300;
   line-height: 25px; }
 
+.menuListHover, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.homepages:hover, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.blog:hover, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.ecommerce:hover, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover {
+  background-color: #272727; }
+  .menuListHover ul, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.homepages:hover ul, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.blog:hover ul, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.ecommerce:hover ul, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover ul {
+    color: #1AC6FF; }
+    .menuListHover ul > i, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.homepages:hover ul > i, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.blog:hover ul > i, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.ecommerce:hover ul > i, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover ul > i {
+      color: #1AC6FF; }
+
 .navbar-default {
   background-color: transparent !important;
   background-image: none;
@@ -137,17 +155,26 @@ a:focus {
   box-shadow: none; }
   .navbar-default .container {
     background-color: transparent;
-    line-height: 70px; }
+    line-height: 70px;
+    overflow: visible; }
     .navbar-default .container .nav-header {
       float: left; }
       .navbar-default .container .nav-header a {
         color: #fff;
         font-size: 32px;
+        font-weight: 300;
         margin-right: 55px; }
         .navbar-default .container .nav-header a span {
           color: #1AC6FF; }
     .navbar-default .container .navbar-menu .navbar-menu-left {
       float: left; }
+      .navbar-default .container .navbar-menu .navbar-menu-left ul i {
+        color: #fff; }
+      .navbar-default .container .navbar-menu .navbar-menu-left ul .fa-caret-right {
+        float: right;
+        position: relative;
+        top: 13px;
+        right: 5px; }
       .navbar-default .container .navbar-menu .navbar-menu-left ul li a {
         color: #CDBED4;
         font-size: 14px;
@@ -162,28 +189,21 @@ a:focus {
       .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra {
         position: relative;
         line-height: 40px; }
-        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul {
+        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra {
+          width: 140px;
+          background-color: #272727;
           position: absolute;
           top: 37px;
-          left: -1px; }
+          left: 0px; }
+          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.homepages, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.blog, .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.ecommerce {
+            background-color: #272727;
+            position: absolute;
+            top: 0;
+            left: 100%; }
+          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra ul.extra ul.ecommerce {
+            width: 200px; }
         .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover {
-          background-color: #272727;
           border-top: 5px solid #1AC6FF; }
-          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover .dropdown-toggle {
-            color: #1AC6FF; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra:hover .dropdown-toggle i {
-              color: #1AC6FF; }
-        .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu {
-          padding: 0; }
-          .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li {
-            background-color: #272727; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li a {
-              color: #fff; }
-              .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li a:hover {
-                background-image: none;
-                color: #1AC6FF; }
-            .navbar-default .container .navbar-menu .navbar-menu-left ul li.extra .dropdown-menu li:hover {
-              background-color: black; }
     .navbar-default .container .navbar-menu .navbar-menu-right {
       float: right; }
       .navbar-default .container .navbar-menu .navbar-menu-right ul li button {
@@ -198,6 +218,20 @@ a:focus {
         .navbar-default .container .navbar-menu .navbar-menu-right ul li:first-child button:hover {
           color: #1AC6FF;
           background-color: transparent; }
+
+.navbar-fixed-top {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1); }
+  .navbar-fixed-top a {
+    color: #000 !important; }
+  .navbar-fixed-top li.extra:hover a {
+    color: #fff !important; }
+  .navbar-fixed-top ul.extra a {
+    color: #fff !important; }
+  .navbar-fixed-top button {
+    color: #000 !important; }
 
 #header {
   color: #fff;
