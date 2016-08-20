@@ -13,6 +13,10 @@ html, body{
 	padding:0;
 	font-family: 'Lato';}
 
+body{
+	position: relative;
+}
+
 section{
 	text-align: center;
 	overflow: hidden;
@@ -72,6 +76,15 @@ a{
 		}
 	}
 }
+
+#fixed-right-menu{
+	position: absolute;
+	top:0;
+	right:-300px;
+	width:300px;
+	background-color:gray;
+}
+
 //Navbar
 .navbar-default{
 	background-color: transparent !important;
@@ -92,10 +105,20 @@ a{
 				margin-right:55px;
 				span{
 					color:$mainColor;}}}
+		#navicon{ //For xs screens
+			i{
+				font-size:30px;
+				color:$mainColor;
+				cursor: pointer;
+			}
+		}
 		.navbar-menu{
 			.navbar-menu-left{
 				float:left;
 				ul{
+					ul.extra, ul.homepages, ul.blog, ul.ecommerce{
+						display: none;
+					}
 					i{
 						color:#fff;
 					}
@@ -421,6 +444,7 @@ a{
 			.package{
 				background-color:#f7f7f7;
 				padding-bottom: 50px;
+				animation-duration: 1s;
 				h1{
 					text-transform: uppercase;
 					font-size:25px;
@@ -455,7 +479,24 @@ a{
 								border: none;}}}
 					.btn{
 						width:100%;
-						margin-top:15px;}}}}
+						margin-top:15px;
+					}
+				}
+				&:hover{
+					background-color:$mainColor;
+					h1,h2,p,li{
+						color:#fff;
+					}
+					.price{
+						background-color:darken($mainColor,10%);
+					}
+					.btn{
+						color:#fff;
+						border-color:#fff;
+					}
+				}
+			}
+		}
 		.disabled{
 			h1{
 				color:#A3A3A3;}

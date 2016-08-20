@@ -21,24 +21,32 @@
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- Custom styles -->
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    </head>
-    <body>
+   </head>
+   <body>
+   
+   <div id="fixed-right-menu">
+   	
+   </div>
+   
    
 	<nav class="navbar navbar-default">
 	<div class="container">
 	<div class="nav-header hidden-sm hidden-md">
 		<a href="#">Startup<span>ly</span></a>
 	</div>
+	<div id="navicon" class="visible-xs-inline-block pull-right">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</div>
 	<div class="navbar-menu hidden-xs">
 		<div class="navbar-menu-left">
 			<ul class="list-inline list-unstyled">
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Prices</a></li>
-				<li><a href="#">Feedback</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Contacts</a></li>
+				<li><a id="home" href="#" class="active">Home</a></li>
+				<li><a id="liAbout" href="#">About</a></li>
+				<li><a id="liFeatures" href="#">Features</a></li>
+				<li><a id="liPrices" href="#">Prices</a></li>
+				<li><a id="liFeedback" href="#">Feedback</a></li>
+				<li><a id="liTeam" href="#">Team</a></li>
+				<li><a id="liContacts" href="#">Contacts</a></li>
 				<li class="extra">
 					<a type="button" class="extra">
 						Extra
@@ -615,288 +623,7 @@
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="assets/js/vendor/bootstrap.min.js"></script>
 		<script src="assets/js/plugins.js"></script>
-   	<script>
-
-// Navbar
-$("nav ul.extra").hide();
-$("nav ul.homepages").hide();
-$("nav ul.blog").hide();
-$("nav ul.ecommerce").hide();
-
-$("nav li.extra").mouseover(function(){
-	$("nav ul.extra").slideDown("fast");
-	
-	// First sub-menu
-	$("nav li.homepages").mouseover(function(){
-		$("nav ul.homepages").fadeIn("fast");
-	})
-		$("nav li.homepages").mouseleave(function(){
-			$("nav ul.homepages").fadeOut("fast");
-		})
-	// Second sub-menu
-	$("nav li.blog").mouseover(function(){
-		$("nav ul.blog").fadeIn("fast");
-	})
-		$("nav li.blog").mouseleave(function(){
-			$("nav ul.blog").fadeOut("fast");
-		})
-	// Third sub-menu
-	$("nav li.ecommerce").mouseover(function(){
-		$("nav ul.ecommerce").fadeIn("fast");
-	})
-		$("nav li.ecommerce").mouseleave(function(){
-			$("nav ul.ecommerce").fadeOut("fast");
-		})
-})
-
-$("nav li.extra").mouseleave(function(){
-	$("nav ul.extra").hide();
-	$("nav ul.homepages").hide();
-	$("nav ul.blog").hide();
-	$("nav ul.ecommerce").hide();
-})
-
-
-// Header resize animation
-setInterval(function(){
-	var h=$(window).height();
-	$("#header > .container").css("padding-top",(h/2)-200+"px");
-},200);
-
-// Header fade in animation
-$("#header .fadeIn").css("animation-play-state","running");
-
-
-// Hide content of second and third tab of 'process' section
-$("#item12").hide();
-$("#item13").hide();
-
-// Hide images of second and third tab of 'features' section
-$("#featureImg2").hide();
-$("#featureImg3").hide();
-
-// Process tab animations
-$("#tab1").on("click",function(){
-	$("#process .container ul li").removeClass("active");
-	$("#tab1").addClass("active");
-	$("#item11").show();
-	$("#item12").hide();
-	$("#item13").hide();
-	$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
-})
-
-$("#tab2").on("click",function(){
-	$("#process .container ul li").removeClass("active");
-	$("#tab2").addClass("active");
-	$("#item11").hide();
-	$("#item12").show();
-	$("#item13").hide();
-	$("#item12 .animateRight, #item12 .animateLeft").css("animation-play-state","running");
-})
-
-$("#tab3").on("click",function(){
-	$("#process .container ul li").removeClass("active");
-	$("#tab3").addClass("active");
-	$("#item11").hide();
-	$("#item12").hide();
-	$("#item13").show();
-	$("#item13 .scaleIn").css("animation-play-state","running");
-	setTimeout(function(){
-		$("#item13 .animateDown").css("animation-play-state","running");
-	},250)
-})
-
-// Hide second and third quotes of 'clientQuotes' section
-$("#quote1").hide();
-$("#quote3").hide();
-
-// Variables for "clientQuote" section
-var previous;
-var current=2;
-
-// 'clientQuote Animations
-$("#client1").on("click",function(){
-	$("#client .col-md-4").removeClass("active");
-	previous=current;
-	current=1;
-	$("#client1").addClass("active");
-	$("#quote1").show();
-	$("#quote2").hide();
-	$("#quote3").hide();
-	$("#clientQuote .container .quote").removeClass("animateLeft").removeClass("animateRight");
-	if(current>previous){
-		$("#quote1").addClass("animateLeft");
-		$("#clientQuote .animateLeft").css("animation-play-state","running");
-		console.log("c:"+current+" > p:"+previous)
-	}
-	else if(current<previous){
-		$("#quote1").addClass("animateRight");
-		$("#clientQuote .animateRight").css("animation-play-state","running");
-		console.log("c:"+current+" < p:"+previous)
-	}
-})
-
-$("#client2").on("click",function(){
-	$("#client .col-md-4").removeClass("active");
-	previous=current;
-	current=2;
-	$("#client2").addClass("active");
-	$("#quote1").hide();
-	$("#quote2").show();
-	$("#quote3").hide();
-	$("#clientQuote .container .quote").removeClass("animateLeft").removeClass("animateRight");
-	if(current>previous){
-		$("#quote2").addClass("animateLeft");
-		$("#clientQuote .animateLeft").css("animation-play-state","running");
-		console.log("c:"+current+" > p:"+previous)
-	}
-	else if(current<previous){
-		$("#quote2").addClass("animateRight");
-		$("#clientQuote .animateRight").css("animation-play-state","running");
-		console.log("c:"+current+" < p:"+previous)
-	}
-})
-
-$("#client3").on("click",function(){
-	$("#client .col-md-4").removeClass("active");
-	previous=current;
-	current=3;
-	$("#client3").addClass("active");
-	$("#quote1").hide();
-	$("#quote2").hide();
-	$("#quote3").show();
-	$("#clientQuote .container .quote").removeClass("animateLeft").removeClass("animateRight");
-	if(current>previous){
-		$("#quote3").addClass("animateLeft");
-		$("#clientQuote .animateLeft").css("animation-play-state","running");
-		console.log("c:"+current+" > p:"+previous)
-	}
-	else if(current<previous){
-		$("#quote3").addClass("animateRight");
-		$("#clientQuote .animateRight").css("animation-play-state","running");
-		console.log("c:"+current+" < p:"+previous)
-	}
-})
-
-// Scroll animations
-$(window).scroll(function(){
-	var wHeight=$(this).height();
-	var wScroll=$(this).scrollTop();
-
-	// Logos animation
-	var i;
-	if( wScroll > ( $("#logos").offset().top - wHeight/1.4) ){
-		i=1;
-		var logoAnimations=setInterval(function(){
-			$("#logos")
-				.find(".container ul li:nth-child("+i+") img")
-				.animate({"bottom": "0"},200)
-			i++;
-			if(i==6){clearInterval(logoAnimations)}
-		},200)
-		
-		$("nav").addClass("navbar-fixed-top");
-	}else{
-		$("nav").removeClass("navbar-fixed-top");
-	}
-
-	// Process item animations
-	if( wScroll > ( $("#process .container #item11").offset().top - wHeight/1.8) ){
-		$("#item11 .animateRight, #item11 .animateLeft").css("animation-play-state","running");
-	}
-	if( wScroll > ( $("#process .container #item2").offset().top - wHeight/1.4) ){
-		$("#item2 .animateRight, #item2 .animateLeft").css("animation-play-state","running");
-	}
-	if( wScroll > ( $("#process .container #item3").offset().top - wHeight/1.4) ){
-		$("#item3 .animateRight, #item3 .animateLeft").css("animation-play-state","running");
-	}
-	
-	// Features section image animations
-	if( wScroll > ( $("#features .container .col-md-12").offset().top - wHeight/1.8) ){
-			$("#features .container #featureImg img").css("animation-play-state","running");
-		}
-	
-	
-	// Features section tab animations
-	$("#featureTab1").on("click",function(){
-		$("#features .container .col-md-12 div").removeClass("active");
-		$("#featureTab1").addClass("active");
-		$("#featureImg1").show();
-		$("#featureImg2").hide();
-		$("#featureImg3").hide();
-	})
-	
-	$("#featureTab2").on("click",function(){
-		$("#features .container .col-md-12 div").removeClass("active");
-		$("#featureTab2").addClass("active");
-		$("#featureImg1").hide();
-		$("#featureImg2").show();
-		$("#featureImg3").hide();
-	})
-	
-	$("#featureTab3").on("click",function(){
-		$("#features .container .col-md-12 div").removeClass("active");
-		$("#featureTab3").addClass("active");
-		$("#featureImg1").hide();
-		$("#featureImg2").hide();
-		$("#featureImg3").show();
-		$("#featureImg .animateLeft").css("animation-play-state","running");
-	})
-	
-	// 'Features List' section animations
-	if( wScroll > ( $("#featuresList .container .row:first-child").offset().top - wHeight/1.8) ){
-			$("#featuresList .container .animateLeft").css("animation-play-state","running");
-		}
-	
-	if( wScroll > ( $("#featuresList .container .row:last-child").offset().top - wHeight/1.8) ){
-			$("#featuresList .container .animateRight").css("animation-play-state","running");
-		}
-	
-	//'Subscription' section animations
-	if( wScroll > ( $("#subscription .container").offset().top - wHeight/1.8) ){
-			$("#subscription .container .animateLeft").css("animation-play-state","running");
-			$("#subscription .container .animateRight").css("animation-play-state","running");
-		}
-	
-	// 'Packages' section animations
-	if( wScroll > ( $("#packages").offset().top - wHeight/1.8) ){
-			$("#packages .animateUp").css("animation-play-state","running");
-		}
-	
-	// 'Packages' section animations
-	if( wScroll > ( $("#awards").offset().top - wHeight/1.8) ){
-			$("#awards .animateDown").css("animation-play-state","running");
-		}
-	
-	// 'ClientQuote' section animations
-	if( wScroll > ( $("#clientQuote").offset().top - wHeight/1.8) ){
-			$("#clientQuote .animateDown").css("animation-play-state","running");
-		};
-	
-	// 'Client' section animations
-	if( wScroll > ( $("#client").offset().top - wHeight/1.8) ){
-			$("#client .animateDown").css("animation-play-state","running");
-		}
-	
-	// 'Team' section alternative
-	
-	if( wScroll > ( $("#team .container .col-md-3").offset().top - wHeight/1.4) ){
-		$("#team .container #teamMember1 .animateDown").css("animation-play-state","running");
-		setTimeout(function(){
-			$("#team .container #teamMember2 .animateUp").css("animation-play-state","running");	
-		},200);
-		setTimeout(function(){
-			$("#team .container #teamMember3 .animateDown").css("animation-play-state","running");	
-		},400);
-		setTimeout(function(){
-			$("#team .container #teamMember4 .animateUp").css("animation-play-state","running");	
-		},600);
-	}
-	
-	
-});//end of scroll method
-
-</script>
+   	<script src="assets/js/main.js"></script>
 
     </body>
 </html>
