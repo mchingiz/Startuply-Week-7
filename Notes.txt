@@ -1,6 +1,0 @@
-*section tagina text-align:center verl
-*font-size ve line-height cox tekrar olunub
-*buttonlarin hoverini ve ozunu 2 ayri classla yaz=>class1- back mavi,yazi ag; class2-back ag,yazi mavi
-*contact us hissesinde unvanin 2ci setiri surusub
-*Processde animationlar ekranin colunden yox containerden gelir
-*Logolar cox suretle gelir
