@@ -151,29 +151,51 @@ $("#client3").on("click",function(){
 	}
 })
 
-//Toggle menu right
+// Toggle menu right(for xs screens)
+var counter=1;
 var wHeight = $(window).height();
 $("#fixed-right-menu").hide();
-$("#fixed-right-menu").height(wHeight);
+$("#fixed-right-menu").height(wHeight+20+"px");
 $("#navicon i").on("click",function(){
-	$("#fixed-right-menu").show("fast");
-	$("body").css("left","-300px");
+	if(counter%2==1){
+		$("#fixed-right-menu").show();
+		$("#fixed-right-menu").css("top",$(window).scrollTop()+"px");
+		$("body").animate({left:"-300px"}, 300);
+	
+	
+	
+		counter++;
+	}else{
+		$("#fixed-right-menu").hide();
+		$("#fixed-right-menu").css("top",$(window).scrollTop()+95+"px");
+		$("body").animate({left:"0px"}, 300);
+	
+	
+		
+		counter++;
+	}
 })
 
-//Function to remove all active class
+// Function to remove all active class
 function removeActiveClass(){
 	$("nav .navbar-menu-left ul li a").removeClass("active");
 }
 
 // Scroll animations
 $(window).scroll(function(){
-	//Hide toggle menu
-	$("#fixed-right-menu").hide();
-	$("body").css("left","0");
-	
 	var wHeight=$(this).height();
 	var wScroll=$(this).scrollTop();
-
+	
+	// Hide toggle menu
+	$("#fixed-right-menu").hide();
+	$("body").css("left","0px");
+	if(counter%2==0){counter++};
+	if(wScroll>77){
+		$("#fixed-right-menu").css("padding-top","77px");
+	}else{
+		$("#fixed-right-menu").css("padding-top","0px");
+	}
+	
 	// Logos animation
 	var i;
 	if( wScroll > ( $("#logos").offset().top - wHeight/1.4) ){
@@ -312,7 +334,18 @@ $(window).scroll(function(){
 		$("#liContacts").addClass("active");
 	}
 	
-	
+	// Button to go to the top
+	if( wScroll > $("#logos").offset().top ){
+		$("#toTop").show();
+	}else{
+		$("#toTop").hide();
+	}
+	$("#toTop").on("click",function(){
+		$(window).scrollTop(0);
+	})
 	
 });//end of scroll method
+	
+	
+	
 })//end of ready function
